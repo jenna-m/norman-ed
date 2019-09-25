@@ -7,12 +7,12 @@ class Navbar extends React.Component {
             <div className="navbar" role="navigation" aria-label="Main">
                 <div className="menu">
                     <ul>
-                        <li>About</li>
-                        <li>Artist Statement</li>
-                        <li>Gallery</li>
-                        <li>Exhibits</li>
-                        <li>Press</li>
-                        <li>Contact</li>
+                        <li><NavLink to="/bio">About</NavLink></li>
+                        <li><NavLink to="/artist-statement">Artist Statement</NavLink></li>
+                        <li><NavLink to="/gallery">Gallery</NavLink></li>
+                        <li><NavLink to="/exhibits">Exhibits</NavLink></li>
+                        <li><NavLink to="/press">Press</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </div>
             </div>
