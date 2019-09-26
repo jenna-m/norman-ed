@@ -147,6 +147,9 @@ ul.dropdown {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  margin-top: 100px;
+  padding: 25px 0 25px 0;
+  border-top: 1px solid #000000;
 }
 
 .footer p {
@@ -195,4 +198,7 @@ ul.dropdown {
 }
 
 
-/* Gallery Pages */
+/* Gallery Pages (pre-collegiate, undergrad, and 1982-present views) */
+.sub-gallery-container {
+
+}
