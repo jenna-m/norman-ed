@@ -4,7 +4,7 @@ Some things to keep in mind when using and editing this document:
     - All images will live in the /gallery folder, along with this file.
     - After galleryImages is mapped, you can access the data for each item like so:
         Title: {item.title}
-        Src: {item.src} / {item.src[0]}, {item.src[1]}, etc. for multiple items
+        Src: {item.src[0]}, {item.src[1]}, etc.
         Date: {item.date}
         Dimensions: {item.dimensions}
         etc.
@@ -190,7 +190,7 @@ export const galleryImages = [
         date: 1975,
         media: 'Ink', // missing media; I guessed
         dimensions: '24" x 18"',
-        src: item1
+        src: [item1]
     },
     {
         id: 2,
@@ -199,7 +199,7 @@ export const galleryImages = [
         date: 1975,
         media: 'Collagraphy Print',
         dimensions: '17" x 12"',
-        src: item2
+        src: [item2]
     },
     {
         id: 3,
@@ -208,7 +208,7 @@ export const galleryImages = [
         date: 1976,
         media: 'Collagraphy Print',
         dimensions: '17" x 12"',
-        src: item3
+        src: [item3]
     },
     {
         id: 4,
@@ -217,7 +217,7 @@ export const galleryImages = [
         date: 1975,
         media: 'Ceramic',
         dimensions: '9" x 8" x 6"',
-        src: item4
+        src: [item4]
     },
     {
         id: 5,
@@ -226,7 +226,7 @@ export const galleryImages = [
         date: 1976,
         media: 'Lithograph', // missing media; I guessed
         dimensions: '10" x 8"',
-        src: item5
+        src: [item5]
     },
     {
         id: 6,
@@ -235,7 +235,7 @@ export const galleryImages = [
         date: 1976,
         media: 'Graphite',
         dimensions: '20" x 16"',
-        src: item6
+        src: [item6]
     },
     {
         id: 7,
@@ -244,7 +244,7 @@ export const galleryImages = [
         date: 1976,
         media: 'Black & White Photography',
         dimensions: 'Unknown', // missing dimensions
-        src: item7
+        src: [item7]
     },
     {
         id: 8,
@@ -253,7 +253,7 @@ export const galleryImages = [
         date: 1976,
         media: 'Silkscreen',
         dimensions: '23" x 14"',
-        src: item8
+        src: [item8]
     },
     {
         id: 9,
@@ -262,7 +262,7 @@ export const galleryImages = [
         date: 1976,
         media: 'Etching',
         dimensions: '12" x 6"',
-        src: item9
+        src: [item9]
     },
     {
         id: 10,
@@ -280,7 +280,7 @@ export const galleryImages = [
         date: 1975,
         media: 'Acrylic, Gold Leaf',
         dimensions: '8" x 8"',
-        src: item11
+        src: [item11]
     },
     {
         id: 12,
@@ -288,7 +288,7 @@ export const galleryImages = [
         date: 1976,
         media: 'Watercolor',
         dimensions: '6" x 12"',
-        src: item12
+        src: [item12]
     },
     {
         id: 13,
@@ -306,7 +306,7 @@ export const galleryImages = [
         date: 1981,
         media: 'Glass',
         dimensions: '48" x 96"',
-        src: item14
+        src: [item14]
     },
     {
         id: 15,
@@ -315,7 +315,7 @@ export const galleryImages = [
         date: 1977,
         media: 'Sterling Silver, Brass',
         dimensions: 'Unknown',
-        src: item15
+        src: [item15]
     },
     {
         id: 16,
@@ -342,7 +342,7 @@ export const galleryImages = [
         date: 1978,
         media: 'Stained Glass',
         dimensions: '24" x 2"', // this doesn't seem right, maybe it should be 24" x 12"?
-        src: item18
+        src: [item18]
     },
     {
         id: 19,
@@ -369,7 +369,7 @@ export const galleryImages = [
         date: 1986,
         media: 'Steel, Found Parts',
         dimensions: '20" x 12" x 8"',
-        src: item21
+        src: [item21]
     },
     {
         id: 22,
@@ -378,7 +378,7 @@ export const galleryImages = [
         date: 1983,
         media: 'Glass, Brass',
         dimensions: '8" x 12" x 3"',
-        src: item22
+        src: [item22]
     },
     {
         id: 23,
@@ -387,7 +387,7 @@ export const galleryImages = [
         date: 1982,
         media: 'Blown Glass, Lamp Parts',
         dimensions: '17" x 7"',
-        src: item23
+        src: [item23]
     },
     {
         id: 24,
@@ -396,7 +396,7 @@ export const galleryImages = [
         date: 1983,
         media: 'Glass, Lamp Parts',
         dimensions: '16" x 7" x 6"',
-        src: item24
+        src: [item24]
     },
     {
         id: 25,
@@ -405,7 +405,7 @@ export const galleryImages = [
         date: 1983,
         media: 'Glass, Steel, Brass',
         dimensions: '24" x 24" x 36"',
-        src: item25
+        src: [item25]
     },
     {
         id: 26,
@@ -414,7 +414,7 @@ export const galleryImages = [
         date: 1990,
         media: 'Copper, Found Parts',
         dimensions: '12" x 8"',
-        src: item26
+        src: [item26]
     },
     {
         id: 27,
@@ -423,7 +423,7 @@ export const galleryImages = [
         date: 1993,
         media: 'Steel, Stone, Ceramic',
         dimensions: '72" x 36" x 48"',
-        src: item27
+        src: [item27]
     },
     {
         id: 28,
@@ -450,7 +450,7 @@ export const galleryImages = [
         date: 1986,
         media: 'Steel, Glass, Lamp Parts',
         dimensions: '15" x 18" x 12"',
-        src: item30
+        src: [item30]
     },
     {
         id: 31,
@@ -468,7 +468,7 @@ export const galleryImages = [
         date: 1986,
         media: 'Found Parts',
         dimensions: '13" x 6"',
-        src: item32
+        src: [item32]
     },
     {
         id: 33,
@@ -477,7 +477,7 @@ export const galleryImages = [
         date: 1989,
         media: 'Glass, Steel, Rubber',
         dimensions: '24" x 10" x 12"',
-        src: item33
+        src: [item33]
     },
     {
         id: 34,
@@ -558,7 +558,7 @@ export const galleryImages = [
         date: 1996,
         media: 'Steel, Handmade Bricks',
         dimensions: '40" x 11" x 11"',
-        src: item42
+        src: [item42]
     },
     {
         id: 43,
@@ -585,7 +585,7 @@ export const galleryImages = [
         date: 1996,
         media: 'Carved Firebrick',
         dimensions: '72" x 18" x 36"',
-        src: item45
+        src: [item45]
     },
     {
         id: 46,
@@ -603,7 +603,7 @@ export const galleryImages = [
         date: 1996,
         media: 'Wood, Steel',
         dimensions: '72" x 36" x 14"',
-        src: item47
+        src: [item47]
     },
     {
         id: 48,
@@ -666,7 +666,7 @@ export const galleryImages = [
         date: 1997,
         media: 'Wood',
         dimensions: '80" x 30" x 56"',
-        src: item54
+        src: [item54]
     },
     {
         id: 55,
@@ -675,7 +675,7 @@ export const galleryImages = [
         date: 1997,
         media: 'Pit Fired Ceramic, Cloth',
         dimensions: '22" x 10"',
-        src: item55
+        src: [item55]
     },
     {
         id: 56,
@@ -693,7 +693,7 @@ export const galleryImages = [
         date: 1996,
         media: 'Photo Collage',
         dimensions: 'Unknown', // No dimensions listed
-        src: item57
+        src: [item57]
     },
     {
         id: 58,
@@ -810,7 +810,7 @@ export const galleryImages = [
         date: 1999,
         media: 'Wood, Steel, Rubber',
         dimensions: '36" x 30" x 30"',
-        src: item70
+        src: [item70]
     },
     {
         id: 71,
