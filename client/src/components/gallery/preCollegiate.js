@@ -1,3 +1,4 @@
+// Renders all works with the gallery 'pre'
 import React from 'react';
 
 class PreCollegiate extends React.Component {

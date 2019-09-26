@@ -1,3 +1,4 @@
+// Renders one random piece of work
 import React from 'react';
 
 class Gallery extends React.Component {

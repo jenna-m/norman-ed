@@ -1,3 +1,4 @@
+// Renders all works with the gallery 'undergrad'
 import React from 'react';
 
 class Undergrad extends React.Component {
