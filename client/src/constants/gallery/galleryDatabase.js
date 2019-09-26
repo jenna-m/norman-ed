@@ -244,7 +244,7 @@ export const galleryImages = [
         title: 'Photo Book',
         date: 1976,
         media: 'Black & White Photography',
-        dimensions: 'Unknown', // missing dimensions
+        dimensions: 'Unknown Dimensions', // missing dimensions
         src: [item7]
     },
     {
@@ -315,7 +315,7 @@ export const galleryImages = [
         title: 'Metals Project',
         date: 1977,
         media: 'Sterling Silver, Brass',
-        dimensions: 'Unknown',
+        dimensions: 'Unknown Dimensions',
         src: [item15]
     },
     {
@@ -693,7 +693,7 @@ export const galleryImages = [
         title: 'Wesley at Five Being David Hockney',
         date: 1996,
         media: 'Photo Collage',
-        dimensions: 'Unknown', // No dimensions listed
+        dimensions: 'Unknown Dimensions', // No dimensions listed
         src: [item57]
     },
     {
