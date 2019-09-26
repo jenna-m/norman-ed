@@ -11,9 +11,10 @@ class AllWork extends React.Component {
                 <div className="item-card" key={item.id}>
                     <div className="item-image">
                         <Link to = {{ 
-                            pathname:`/gallery/${item.gallery}`,
+                            pathname:`/art`,
                             search: `?id=${item.id}`
-                        }}>
+                        }}
+                        >
                             <img src={item.src[0]} alt={item.title} />
                         </Link>
                     </div>
