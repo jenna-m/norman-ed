@@ -19,7 +19,7 @@ class Navbar extends React.Component {
                     <li>
                         <li className="menu-category"><NavLink to="/gallery">Gallery</NavLink></li>
                         <ul className="dropdown">
-                            <li className="sublink"><NavLink to="/gallery">All Work</NavLink></li>
+                            <li className="sublink"><NavLink to="/all-work">All Work</NavLink></li>
                             <li className="sublink"><NavLink to="/pre-collegiate">Pre-Collegiate</NavLink></li>
                             <li className="sublink"><NavLink to="/undergrad">Undergrad</NavLink></li>
                             <li className="sublink"><NavLink to="/post-present">1982 to Present</NavLink></li>    
