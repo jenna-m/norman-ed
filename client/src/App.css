@@ -228,7 +228,6 @@ ul.dropdown {
 /* Artwork Details */
 .item-details {
   width: 100%;
-  margin-left: 50px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -238,9 +237,11 @@ ul.dropdown {
 
 .item-details-img {
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .item-details-info p {
+  margin-left: 50px;
   font-family: 'Roboto Slab', serif;
   font-size: 1.75em;
   line-height: .75em;
