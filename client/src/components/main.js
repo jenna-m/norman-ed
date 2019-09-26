@@ -1,9 +1,9 @@
 import React from 'react';
 import { 
+    withRouter,
     Switch,
     BrowserRouter as Router,
 } from 'react-router-dom';
-
 import Navbar from './navbar';
 import Footer from './footer';
 import ScrollToTop from './scrollToTop';
@@ -26,4 +26,4 @@ class Main extends React.Component {
     }
 }
 
-export default Main;
+export default withRouter(Main);
