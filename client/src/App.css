@@ -22,6 +22,7 @@ h1 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .15em;
+  text-decoration: overline;
 }
 
 ul {
