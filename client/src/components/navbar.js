@@ -6,11 +6,11 @@ class Navbar extends React.Component {
         return (
             <div className="navbar" role="navigation" aria-label="Main">
                 <div className="logo">
-                    Norman Ed
+                    <NavLink to="/">Norman Ed</NavLink>
                 </div>
                 <ul className="menu">
                     <li>
-                        <li className="menu-category"><NavLink to="/">About</NavLink></li>
+                        <li className="menu-category"><NavLink to="/bio">About</NavLink></li>
                         <ul className="dropdown">
                             <li className="sublink"><NavLink to="/bio">Biography</NavLink></li>
                             <li className="sublink"><NavLink to="/artist-statement">Artist Statement</NavLink></li>    
