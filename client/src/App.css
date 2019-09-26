@@ -45,13 +45,17 @@ a:visited {
   
 }
 
-.logo {
+.logo a {
   display: flex;
   justify-content: flex-start;
   padding: 20px;
   color: #3d5c36;
   font-family: 'Staatliches', 'Futura', sans-serif;
   font-size: 2em;
+}
+
+.logo a:hover {
+  text-decoration: none;
 }
 
 .menu {
@@ -86,10 +90,6 @@ ul.menu li a {
 
 ul.menu > li:hover {
   background-color: #ffffff;
-}
-
-ul.menu li a:hover {
-  border-bottom: none;
 }
 
 ul.menu > li {
