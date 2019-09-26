@@ -6,6 +6,7 @@ import Home from '../components/pages/home';
 import Bio from '../components/about/bio';
 import ArtistStatement from '../components/about/artistStatement';
 import Gallery from '../components/gallery/gallery';
+import AllWork from '../components/gallery/allWork';
 import PreCollegiate from '../components/gallery/preCollegiate';
 import Undergrad from '../components/gallery/undergrad';
 import PostToPresent from '../components/gallery/postToPresent';
@@ -21,6 +22,7 @@ export const Routes =
             <Route path="/bio" component={ Bio }/>
             <Route path="/artist-statement" component={ ArtistStatement }/>
             <Route path="/gallery" component={ Gallery }/>
+            <Route path="/all-work" component={ AllWork }/>
             <Route path="/pre-collegiate" component={ PreCollegiate }/>
             <Route path="/undergrad" component={ Undergrad }/>
             <Route path="/post-present" component={ PostToPresent }/>
