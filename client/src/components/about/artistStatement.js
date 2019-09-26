@@ -3,7 +3,7 @@ import React from 'react';
 class ArtistStatement extends React.Component {
     render() {
         return (
-            <div className="artist-statement-container">
+            <div className="container">
                 Artist Statement content
             </div>
         );

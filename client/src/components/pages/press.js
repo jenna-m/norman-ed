@@ -3,7 +3,7 @@ import React from 'react';
 class Press extends React.Component {
     render() {
         return (
-            <div className="press-container">
+            <div className="container">
                 Press content
             </div>
         );
