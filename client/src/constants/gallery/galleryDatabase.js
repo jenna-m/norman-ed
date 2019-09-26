@@ -25,8 +25,8 @@ import item6 from './pencil-study/pencil-study.png';
 import item7 from './photo-book/photo-book.png';
 import item8 from './print/print.png';
 import item9 from './seismograph/seismograph.png';
-import item10a from './self-portrait/self-prortrait-1.png';
-import item10b from './self-portrait/self-prortrait-2.png';
+import item10a from './self-portrait/self-portrait-1.png';
+import item10b from './self-portrait/self-portrait-2.png';
 import item11 from './small-painting/small-painting.png';
 import item12 from './small-watercolor/small-watercolor.png';
 import item13a from './arc/arc-1.png';
@@ -46,9 +46,10 @@ import item21 from './hinged-lamp/hinged-lamp.png';
 import item22 from './lamp-1/lamp-1.png';
 import item23 from './lamp-2/lamp-2.png';
 import item24 from './lamp-for-ruth-king/lamp-for-ruth-king.png';
-import item25 from './nest/next.png';
+import item25 from './nest/nest.png';
 import item26 from './blue-light-special/blue-light-special.png';
-import item27 from './choice/choice.png';
+import item27a from './choice/choice-1.png';
+import item27b from './choice/choice-2.png';
 import item28a from './hinged-arc/hinged-arc-1.png';
 import item28b from './hinged-arc/hinged-arc-2.png';
 import item28c from './hinged-arc/hinged-arc-3.png';
@@ -91,13 +92,13 @@ import item44c from './reclining-vessel/reclining-vessel-3.png';
 import item45 from './standing-figure/standing-figure.png';
 import item46a from './tool-with-holder/tool-with-holder-1.png';
 import item46b from './tool-with-holder/tool-with-holder-2.png';
-import item47 from './untitled/untitled.png';
+import item47 from './untitled-1996/untitled-1996.png';
 import item48a from './untitled-ladle-1/untitled-ladle-1-1.png';
 import item48b from './untitled-ladle-1/untitled-ladle-1-2.png';
 import item48c from './untitled-ladle-1/untitled-ladle-1-3.png';
-import item49a from './untitled-ladle-1/untitled-ladle-4-1.png';
-import item49b from './untitled-ladle-1/untitled-ladle-4-2.png';
-import item49c from './untitled-ladle-1/untitled-ladle-4-3.png';
+import item49a from './untitled-ladle-4/untitled-ladle-4-1.png';
+import item49b from './untitled-ladle-4/untitled-ladle-4-2.png';
+import item49c from './untitled-ladle-4/untitled-ladle-4-3.png';
 import item50a from './bed-vault/bed-vault-1.png';
 import item50b from './bed-vault/bed-vault-2.png';
 import item50c from './bed-vault/bed-vault-3.png';
@@ -133,9 +134,9 @@ import item60a from './marital-aid/marital-aid-1.png';
 import item60b from './marital-aid/marital-aid-2.png';
 import item60c from './marital-aid/marital-aid-3.png';
 import item60d from './marital-aid/marital-aid-4.png';
-import item61a from './untitled/untitled-1.png';
-import item61b from './untitled/untitled-2.png';
-import item61c from './untitled/untitled-3.png';
+import item61a from './untitled-1998/untitled-1998-1.png';
+import item61b from './untitled-1998/untitled-1998-2.png';
+import item61c from './untitled-1998/untitled-1998-3.png';
 import item62a from './untitled-adjustable-sculpture-2/untitled-adjustable-sculpture-2-1.png';
 import item62b from './untitled-adjustable-sculpture-2/untitled-adjustable-sculpture-2-2.png';
 import item62c from './untitled-adjustable-sculpture-2/untitled-adjustable-sculpture-2-3.png';
@@ -178,7 +179,7 @@ import item72c from './siblings/siblings-3.png';
 import item72d from './siblings/siblings-4.png';
 import item72e from './siblings/siblings-5.png';
 import item73a from './untitled-adjustable-sculpture/untitled-adjustable-sculpture-1.png';
-import item73a from './untitled-adjustable-sculpture/untitled-adjustable-sculpture-2.png';
+import item73b from './untitled-adjustable-sculpture/untitled-adjustable-sculpture-2.png';
 
 
 // All gallery image data
@@ -423,7 +424,7 @@ export const galleryImages = [
         date: 1993,
         media: 'Steel, Stone, Ceramic',
         dimensions: '72" x 36" x 48"',
-        src: [item27]
+        src: [item27a, item27b]
     },
     {
         id: 28,
