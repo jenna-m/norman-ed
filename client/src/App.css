@@ -198,6 +198,28 @@ ul.dropdown {
 }
 
 
+/* Artwork Details */
+.item-details {
+  width: 100%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.item-details-img {
+  margin: 0 auto;
+}
+
+.item-details-info p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.75em;
+  line-height: .75em;
+}
+
+
 /* Gallery Pages (pre-collegiate, undergrad, and 1982-present views) */
 .sub-gallery-container {
 
