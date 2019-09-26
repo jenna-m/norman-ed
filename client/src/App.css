@@ -132,7 +132,7 @@ ul.dropdown {
   z-index: 1000;
   width: 250px;
   padding: 0px;
-  background-color: rgba(255, 255 ,255, 0.5);
+  background-color: rgba(255, 255 ,255, 0.7);
 }
 
 .sublink {
@@ -165,7 +165,34 @@ ul.dropdown {
 
 
 /* About Section - Biography and Artist Statement */
+.bio-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+.bio-text {
+  margin-left: 50px;
+  width: 50%;
+  font-size: 1em;
+  line-height: 1.7em;
+}
+
+.bio-image {
+  width: 35%;
+}
+
+.bio-image img {
+  width: 65%;
+}
+
+.bio-image p {
+  font-family: 'Roboto Slab', serif;
+  font-size: .8em;
+}
 
 
 /* Gallery Menu */
