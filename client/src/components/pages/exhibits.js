@@ -4,7 +4,7 @@ class Exhibits extends React.Component {
     render() {
         return (
             <div className="container">
-                Exhibits content
+                <h1>Exhibits</h1>
             </div>
         );
     }

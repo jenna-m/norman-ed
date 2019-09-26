@@ -4,7 +4,7 @@ class ArtistStatement extends React.Component {
     render() {
         return (
             <div className="container">
-                Artist Statement content
+                <h1>Artist Statement</h1>
             </div>
         );
     }

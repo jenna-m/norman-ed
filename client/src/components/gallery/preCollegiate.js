@@ -4,7 +4,7 @@ class PreCollegiate extends React.Component {
     render() {
         return (
             <div className="container">
-                Pre-Collegiate content
+                <h1>Pre-Collegiate</h1>
             </div>
         );
     }

@@ -4,7 +4,7 @@ class Press extends React.Component {
     render() {
         return (
             <div className="container">
-                Press content
+                <h1>Press</h1>
             </div>
         );
     }
