@@ -6,7 +6,7 @@ The 'year' key should be kept as an integer.
 export const pressArticles = [
     {
         title: 'Family exhibition at Westmont arts center is "true, unique and diverse"',
-        excerpt: '',
+        excerpt: 'Norman Ed, who has sculpture pieces in the show, said it is great to be having an exhibition with his family. “They all make great work, and it will be enjoyable to see the work all in one place,” he said. “I am also looking forward to seeing the influence and inspiration for the work. Sometimes it is very similar, sometimes it is very diverse.”',
         source: 'The Tribune-Democrat',
         url: 'https://www.tribdem.com/features/family-exhibition-at-westmont-arts-center-is-true-unique-and/article_a4ce17e2-d0d1-11e9-953a-2bf74d99d89d.html',
         date: 'September 7, 2019',
@@ -38,7 +38,7 @@ export const pressArticles = [
     },
     {
         title: 'Many curious about downtown sculpture',
-        excerpt: '',
+        excerpt: '"It is a guerilla or covert action, if you want to call it that," he said. Ed said the piece is made from cribbing - used to shore up the roofs of underground mines. The material, he believes, makes the work more significant to this region. He is not too concerned by the possibility that his labor of love may not remain near the busy intersection for long.',
         source: 'The Tribune-Democrat',
         url: 'https://www.tribdem.com/news/local_news/many-curious-about-downtown-sculpture/article_0d493891-6335-5fdd-9f56-3e69be7bde07.html',
         date: 'November 13, 2009',
