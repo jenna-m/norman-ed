@@ -187,7 +187,7 @@ ul.dropdown {
 
 .random-image-component p {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #353535;
   text-align: center;
 }
@@ -205,17 +205,17 @@ ul.dropdown {
 
 .bio-text {
   margin-left: 50px;
-  width: 50%;
-  font-size: 1em;
+  width: 55%;
+  font-size: 1.05em;
   line-height: 1.7em;
 }
 
 .bio-image {
-  width: 35%;
+  width: 30%;
 }
 
 .bio-image img {
-  width: 65%;
+  width: 75%;
 }
 
 .bio-image p {
