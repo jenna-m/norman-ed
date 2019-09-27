@@ -148,8 +148,7 @@ ul.dropdown {
   align-content: center;
   align-items: center;
   margin-top: 100px;
-  padding: 25px 0 25px 0;
-  border-top: 1px solid #000000;
+  padding: 50px 0 50px 0;
 }
 
 .footer p {
@@ -171,25 +170,30 @@ ul.dropdown {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .home-side-text {
-  width: 30%;
+  width: 25%;
 }
 
 .home-random-image {
-  width: 55%
+  width: 74%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.home-random-image img {
+.random-image-component img {
   max-height: 400px;
-  max-width: 400px;
 }
 
-.random-image-title {
+.random-image-component p {
   font-family: 'Roboto Slab', serif;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #1a1a1d;
+  text-align: center;
 }
 
 
