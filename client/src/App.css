@@ -307,7 +307,7 @@ ul.dropdown {
 
 .exhibition-info {
   width: 53%;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #353535;
 }
 
 /* Styling for exhibition info li's */
@@ -350,5 +350,40 @@ ul.dropdown {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+}
+
+.press-card {
+  width: 60%;
+  border-bottom: 5px solid #353535;
+}
+
+.press-date {
+  padding: 40px 0 10px 0;
+  color: #353535;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1em;
+  letter-spacing: .05em;
+}
+
+.press-title {
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+
+.press-excerpt {
+  border-left: 2px solid #d1d1d1;
+  padding-left: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1em;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
+.press-source {
+  padding: 15px 0 40px 0;
+  font-size: .9em;
 }
