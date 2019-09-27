@@ -11,7 +11,7 @@ import PreCollegiate from '../components/gallery/preCollegiate';
 import Undergrad from '../components/gallery/undergrad';
 import PostToPresent from '../components/gallery/postToPresent';
 import Item from '../components/gallery/item';
-import Exhibits from '../components/pages/exhibits';
+import Exhibitions from '../components/pages/exhibitions';
 import Press from '../components/pages/press';
 import Contact from '../components/pages/contact';
 import NotFound from '../components/pages/404';
@@ -28,7 +28,7 @@ export const Routes =
             <Route path="/undergrad" component={ Undergrad }/>
             <Route path="/post-present" component={ PostToPresent }/>
             <Route path="/art" component={ Item }/>
-            <Route path="/exhibits" component={ Exhibits }/>
+            <Route path="/exhibitions" component={ Exhibitions }/>
             <Route path="/press" component={ Press }/>
             <Route path="/contact" component={ Contact }/>
             <Route component={ NotFound }/>
