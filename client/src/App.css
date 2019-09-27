@@ -159,7 +159,7 @@ ul.dropdown {
 }
 
 
-/* Home Page */
+/* Home Page and RandomImage Component*/
 .home-container {
   width: 100%;
   display: flex;
@@ -193,7 +193,7 @@ ul.dropdown {
 }
 
 
-/* About Section - Biography and Artist Statement */
+/* About Page - Biography and Artist Statement */
 .bio-container {
   width: 100%;
   display: flex;
@@ -224,7 +224,7 @@ ul.dropdown {
 }
 
 
-/* Gallery Menu */
+/* Gallery Menu - WORK IN PROGRESS */
 .gallery-menu {
   display: none;
 }
@@ -283,7 +283,7 @@ ul.dropdown {
 }
 
 
-/* Exhibits Page */
+/* Exhibitions Page */
 .exhibition-card {
   margin-top: 80px;
   display: flex;
@@ -302,7 +302,7 @@ ul.dropdown {
 }
 
 .exhibition-image img {
-  max-height: 325px;
+  width: 40%;
 }
 
 .exhibition-info {
@@ -341,4 +341,14 @@ ul.dropdown {
   font-family: 'Roboto Slab', serif;
   font-size: 1em;
   color: #353535;
+}
+
+
+/* Press Page */
+.press-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
