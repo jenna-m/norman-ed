@@ -14,7 +14,7 @@ class Exhibitions extends React.Component {
                         <ul>
                             <li className="year">{item.year}</li>
                             <li className="title"><a href={item.url} target="new">{item.title}</a></li>
-                            <li className="venue-and-location">{item.venue} | {item.location}</li>
+                            <li className="venue-and-location">{item.venue} / {item.location}</li>
                             <li className="description">{item.desc}</li>
                             <li className="date">{item.date}</li>
                         </ul>
