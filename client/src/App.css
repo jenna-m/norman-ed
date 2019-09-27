@@ -16,7 +16,7 @@ body {
 
 h1 {
   margin-left: 50px;
-  color: #1a1a1d;
+  color: #000000;
   font-family: 'Staatliches', 'Futura', sans-serif;
   font-size: 3em;
   font-weight: 400;
@@ -37,10 +37,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-a:visited {
-  color: #1a1a1d;
 }
 
 
@@ -192,7 +188,7 @@ ul.dropdown {
 .random-image-component p {
   font-family: 'Roboto Slab', serif;
   font-size: 1.2em;
-  color: #1a1a1d;
+  color: #353535;
   text-align: center;
 }
 
@@ -287,7 +283,57 @@ ul.dropdown {
 }
 
 
-/* Gallery Pages (pre-collegiate, undergrad, and 1982-present views) */
-.sub-gallery-container {
+/* Exhibits Page */
+.exhibition-card {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.exhibition-image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.exhibition-image img {
+  width: 40%;
+}
+
+.exhibition-info {
+  width: 50%;
+  border-bottom: 5px solid #000000;
+}
+
+/* Styling for exhibition info li's */
+.year {
+  font-size: .8em;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.venue-and-location {
+  padding-top: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.description {
+  padding-top: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+}
+
+.date {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  color: #353535;
 }
