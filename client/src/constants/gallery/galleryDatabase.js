@@ -738,7 +738,7 @@ export const galleryImages = [
         title: 'Untitled Adjustable Sculpture #2',
         date: 1997,
         media: 'Wood, Steel',
-        dimensions: '27" x 18" - Adjustable Height of 96" x 145"', // Are these dimensions worded correctly?
+        dimensions: '27" x 18" x 96" - 145"',
         src: [item62a, item62b, item62c]
     },
     {
@@ -837,7 +837,7 @@ export const galleryImages = [
         title: 'Untitled Adjustable Sculpture',
         date: 1998,
         media: 'Wood, Steel',
-        dimensions: '4 1/2" x 10" - Adjustable Length of 120" x 228"', // is this the right wording?
+        dimensions: '4 1/2" x 10" x 120" - 228"',
         src: [item73a, item73b]
     },
 ];
