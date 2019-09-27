@@ -264,20 +264,26 @@ ul.dropdown {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .item-details-img {
-  margin: 0 auto;
-  padding-top: 50px;
+  width: 60%;
+  padding-top: 32.16px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-details-info {
+  width: 30%;
 }
 
 .item-details-info p {
   margin-left: 50px;
   font-family: 'Roboto Slab', serif;
   font-size: 1.75em;
-  line-height: .75em;
+  line-height: 1.1em;
 }
 
 
