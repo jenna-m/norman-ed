@@ -21,7 +21,7 @@ class RandomImage extends React.Component {
         const randomImg = this.state.items.map(item => {
             if (item.id === randomImageID) {
                 return (
-                    <div>
+                    <div className="random-image-component">
                         <Link to = {{ 
                             pathname:`/art`,
                             search: `?id=${item.id}`
@@ -29,7 +29,7 @@ class RandomImage extends React.Component {
                         >
                             <img src={item.src[0]} alt={item.title} />
                         </Link>
-                        <p className="random-image-title">{item.title}</p>
+                        <p>{item.title}</p>
                     </div>
                 );
             }
