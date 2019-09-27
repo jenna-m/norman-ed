@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { galleryImages } from '../../constants/gallery/galleryDatabase';
-import Item from './item';
+
 
 class AllWork extends React.Component {
     render() {
