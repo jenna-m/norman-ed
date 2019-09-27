@@ -164,6 +164,35 @@ ul.dropdown {
 }
 
 
+/* Home Page */
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.home-side-text {
+  width: 30%;
+}
+
+.home-random-image {
+  width: 55%
+}
+
+.home-random-image img {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.random-image-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  color: #1a1a1d;
+}
+
+
 /* About Section - Biography and Artist Statement */
 .bio-container {
   width: 100%;
