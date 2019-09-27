@@ -5,11 +5,13 @@ class Press extends React.Component {
     render() {
         let articles = pressArticles.map(item => {
             return (
-                <div>
-                    <li className="press-title"><a href={item.url} target="new">"{item.title}"</a></li>
-                    <li className="press-date">{item.date}</li>
-                    <li className="press-excerpt">{item.excerpt}</li>
-                    <li className="press-source">Source: {item.source}</li>
+                <div className="press-card">
+                    <ul>
+                        <li className="press-date">{item.date}</li>
+                        <li className="press-title"><a href={item.url} target="new">{item.title}</a></li>
+                        <li className="press-excerpt">{item.excerpt}</li>
+                        <li className="press-source">Source: <a href={item.url} target="new">{item.source}</a></li>
+                    </ul>
                 </div>
             )
         })
@@ -18,10 +20,8 @@ class Press extends React.Component {
                 <div className="container">
                     <h1>Press</h1>
                 </div>
-                <div className="press-list">
-                    <ul>
-                        { articles }
-                    </ul>
+                <div className="press-container">
+                    { articles }
                 </div>
             </div>
         );
