@@ -294,7 +294,7 @@ ul.dropdown {
 }
 
 .exhibition-image {
-  width: 50%;
+  width: 47%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -302,37 +302,42 @@ ul.dropdown {
 }
 
 .exhibition-image img {
-  width: 40%;
+  max-height: 325px;
 }
 
 .exhibition-info {
-  width: 50%;
+  width: 53%;
   border-bottom: 5px solid #000000;
 }
 
 /* Styling for exhibition info li's */
 .year {
-  font-size: .8em;
+  font-size: .9em;
+  color: #353535;
 }
 
 .title {
-  font-size: 1.5em;
+  padding-top: 10px;
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: .1em;
 }
 
 .venue-and-location {
   padding-top: 20px;
   font-family: 'Roboto Slab', serif;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .description {
-  padding-top: 10px;
+  padding-top: 15px;
   font-family: 'Roboto Slab', serif;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .date {
+  padding-top: 10px;
   font-family: 'Roboto Slab', serif;
   font-size: 1em;
   color: #353535;
