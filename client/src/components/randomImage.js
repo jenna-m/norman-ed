@@ -29,7 +29,7 @@ class RandomImage extends React.Component {
                         >
                             <img src={item.src[0]} alt={item.title} />
                         </Link>
-                        <p>{item.title}</p>
+                        <p>{item.title}, {item.date}</p>
                     </div>
                 );
             }
