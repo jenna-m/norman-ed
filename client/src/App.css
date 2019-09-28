@@ -47,6 +47,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 80px;
   background-color: #ffffff;
   color: #000000;
   
@@ -275,22 +276,30 @@ ul.dropdown {
   align-items: flex-start;
 }
 
-.item-details-img {
+.item-details-images {
   width: 60%;
   padding-top: 32.16px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.item-details-single-img {
+  padding-bottom: 60px;
 }
 
 .item-details-info {
   width: 30%;
+  position: fixed;
+  left: 0;
+  top: 80px;
 }
 
 .item-details-info p {
   margin-left: 50px;
   font-family: 'Roboto Slab', serif;
   font-size: 1.75em;
-  line-height: 1.1em;
 }
 
 
@@ -397,4 +406,17 @@ ul.dropdown {
 .press-source {
   padding: 15px 0 40px 0;
   font-size: .9em;
+}
+
+
+/* Contact Form */
+.form-container {
+  width: 100%;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
