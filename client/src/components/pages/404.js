@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomImage from '../randomImage';
+import RandomImage from '../randomImage/randomImage';
 
 class NotFound extends React.Component {
     render() {
