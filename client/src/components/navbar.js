@@ -10,13 +10,6 @@ class Navbar extends React.Component {
                 </div>
                 <ul className="menu">
                     <li>
-                        <li className="menu-category"><NavLink to="/bio">About</NavLink></li>
-                        <ul className="dropdown">
-                            <li className="sublink"><NavLink to="/bio">Biography</NavLink></li>
-                            <li className="sublink"><NavLink to="/artist-statement">Artist Statement</NavLink></li>    
-                        </ul>
-                    </li>
-                    <li>
                         <li className="menu-category"><NavLink to="/gallery">Gallery</NavLink></li>
                         <ul className="dropdown">
                             <li className="sublink"><NavLink to="/all-work">All Work</NavLink></li>
@@ -27,6 +20,13 @@ class Navbar extends React.Component {
                     </li>
                     <li className="menu-category"><NavLink to="/exhibitions">Exhibitions</NavLink></li>
                     <li className="menu-category"><NavLink to="/press">Press</NavLink></li>
+                    <li>
+                        <li className="menu-category"><NavLink to="/bio">About</NavLink></li>
+                        <ul className="dropdown">
+                            <li className="sublink"><NavLink to="/bio">Biography</NavLink></li>
+                            <li className="sublink"><NavLink to="/artist-statement">Artist Statement</NavLink></li>    
+                        </ul>
+                    </li>
                     <li className="menu-category"><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
             </div>
