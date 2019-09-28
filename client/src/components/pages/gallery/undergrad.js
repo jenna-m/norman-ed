@@ -1,13 +1,13 @@
-// Renders all works with the gallery 'post'
-// Have sidebar with links for individual years
+// Renders all works with the gallery 'undergrad'
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { galleryImages } from '../../constants/gallery/galleryDatabase';
+import { galleryImages } from '../../../constants/gallery/galleryDatabase';
 
-class PostToPresent extends React.Component {
+
+class Undergrad extends React.Component {
     render() {
-        let postToPresentWork = galleryImages.map(item => {
-            if (item.gallery === 'post') {
+        let undergradWork = galleryImages.map(item => {
+            if (item.gallery === 'undergrad') {
                 return (
                     <div className="item-card" key={item.id}>
                         <div className="item-image">
@@ -24,13 +24,13 @@ class PostToPresent extends React.Component {
         })
         return (
             <div className="container">
-                <h1>1982 - Present</h1>
+                <h1>Undergrad</h1>
                 <div className="gallery-container">
-                    { postToPresentWork }
+                    { undergradWork }
                 </div>
             </div>
         );
     }
 }
 
-export default withRouter(PostToPresent);
+export default withRouter(Undergrad);

@@ -3,16 +3,16 @@ import { Route, Switch } from 'react-router-dom';
 
 //Import page components
 import Home from '../components/pages/home';
-import Bio from '../components/about/bio';
-import ArtistStatement from '../components/about/artistStatement';
-import Gallery from '../components/gallery/gallery';
-import PreCollegiate from '../components/gallery/preCollegiate';
-import Undergrad from '../components/gallery/undergrad';
-import PostToPresent from '../components/gallery/postToPresent';
-import Item from '../components/gallery/item';
+import Bio from '../components/pages/about/bio';
+import ArtistStatement from '../components/pages/about/artistStatement';
+import Gallery from '../components/pages/gallery/gallery';
+import PreCollegiate from '../components/pages/gallery/preCollegiate';
+import Undergrad from '../components/pages/gallery/undergrad';
+import PostToPresent from '../components/pages/gallery/postToPresent';
+import Item from '../components/pages/gallery/item';
 import Exhibitions from '../components/pages/exhibitions';
 import Press from '../components/pages/press';
-import Contact from '../components/pages/contact';
+import Contact from '../components/pages/contact/contact';
 import NotFound from '../components/pages/404';
 
 export const Routes = 
