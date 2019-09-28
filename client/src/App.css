@@ -66,21 +66,17 @@ a:hover {
 }
 
 .menu {
+  width: 75%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
 }
 
 .menu li {
-  margin-right: 20px;
   font-family: 'Staatliches', 'Futura', sans-serif;
   text-transform: uppercase;
-}
-
-.menu a {
-  margin-right: 20px;
 }
 
 /* Sub-menu */
@@ -156,6 +152,21 @@ ul.dropdown {
 /* (Universal) Page Container */
 .container {
   width: 100%;
+}
+
+
+/* 404 Page */
+._404-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+._404-container p {
+  font-family: 'Roboto Slab', serif; 
+  font-size: 1.8em;
 }
 
 
