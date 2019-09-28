@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomImage from '../randomImage'; // something's broken w/ this
+import RandomImage from '../randomImage/randomImage';
 
 class Home extends React.Component {
     render() {
