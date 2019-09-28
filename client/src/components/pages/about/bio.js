@@ -4,9 +4,6 @@ import bioImg from '../../../constants/bio/bio.jpg';
 
 class Bio extends React.Component {
     render() {
-        // Bio text URL
-        const bioURL = "http://www.johnstownart.com/past-scholarshipshow.html#anchor_39"
-
         // Bio photo credit URL
         const creditURL = "https://artworksjohnstown.wordpress.com/2012/06/03/check-out-some-photos-from-the-opening-night-of-dialogue/";
         
