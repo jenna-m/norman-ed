@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { galleryImages } from '../../../constants/gallery/galleryDatabase';
+import ItemImages from './itemImages/itemImages';
 
 
 class Item extends React.Component {
@@ -23,9 +24,7 @@ class Item extends React.Component {
         const item = this.state.item;
         return (
             <div className="item-details" key={item.id}>
-                <div className="item-details-img">
-                    <img src={item.src[0]} alt={item.title} />
-                </div>
+                <ItemImages />
                 <div className="item-details-info">
                     <h1>{item.title}</h1>
                     <p>{item.date}</p>
