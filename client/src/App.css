@@ -290,6 +290,7 @@ ul.dropdown {
 }
 
 .item-details-single-img {
+  margin: auto;
   padding-bottom: 60px;
 }
 
@@ -304,6 +305,12 @@ ul.dropdown {
   margin-left: 50px;
   font-family: 'Roboto Slab', serif;
   font-size: 1.75em;
+}
+
+.prev-next-buttons {
+  border: 1px solid red;
+  margin-left: 50px;
+  font-size: 3em;
 }
 
 
