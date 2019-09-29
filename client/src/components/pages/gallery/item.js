@@ -23,6 +23,7 @@ class Item extends React.Component {
     render() {
         const item = this.state.item;
         return (
+          <div className="container">
             <div className="item-details" key={item.id}>
                 <ItemImages />
                 <div className="item-details-info">
@@ -32,6 +33,7 @@ class Item extends React.Component {
                     <p>{item.dimensions}</p>
                 </div>
             </div>
+          </div>
         );
     }
 }
