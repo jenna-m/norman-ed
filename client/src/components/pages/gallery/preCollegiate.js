@@ -7,7 +7,7 @@ import { galleryImages } from '../../../constants/gallery/galleryDatabase';
 class PreCollegiate extends React.Component {
     render() {
         let preCollegiateWork = galleryImages.map(item => {
-            if (item.gallery === 'pre') {
+            if (item.category === 'pre-collegiate') {
                 return (
                     <div className="item-card" key={item.id}>
                         <div className="item-image">
