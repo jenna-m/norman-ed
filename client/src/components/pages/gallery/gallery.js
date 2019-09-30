@@ -26,9 +26,9 @@ class Gallery extends React.Component {
                 <h1>Gallery</h1>
                 <div className="gallery-menu">
                     <ul>
-                        <li>Pre-Collegiate</li>
+                        <li>Pre-collegiate</li>
                         <li>Undergrad</li>
-                        <li>1982 - Present</li>
+                        <li>Post-collegiate</li>
                     </ul>
                 </div>
                 <div className="gallery-container">
