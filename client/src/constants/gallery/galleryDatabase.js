@@ -8,10 +8,10 @@ Some things to keep in mind when using and editing this document:
         Date: {item.date}
         Dimensions: {item.dimensions}
         etc.
-    - The 'gallery' key corresponds with the era of the artwork (i.e. 'pre' is 
-    'pre-collegiate', 'undergrad' is 'undergrad', and 'post' is 'post-collegiate').
-    This can be used to sort the gallery by era. To sort by date, use an if statement
-    and include item.date.
+    - The 'category' key corresponds with the era of the artwork ('pre-collegiate',
+    'undergrad', 'post-collegiate').
+    This will be used to sort the gallery by era and for breadcrumb navigation.
+    To sort by date, use an if statement and use item.date.
 */
 
 
@@ -182,11 +182,11 @@ import item73a from './untitled-adjustable-sculpture/untitled-adjustable-sculptu
 import item73b from './untitled-adjustable-sculpture/untitled-adjustable-sculpture-2.png';
 
 
-// All gallery image data
+// All Gallery image data
 export const galleryImages = [
     {
         id: 1,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Calligraphy Project',
         date: 1975,
         media: 'Ink', // missing media; I guessed
@@ -195,7 +195,7 @@ export const galleryImages = [
     },
     {
         id: 2,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Collagraph 1',
         date: 1975,
         media: 'Collagraphy Print',
@@ -204,7 +204,7 @@ export const galleryImages = [
     },
     {
         id: 3,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Collagraph 2',
         date: 1976,
         media: 'Collagraphy Print',
@@ -213,7 +213,7 @@ export const galleryImages = [
     },
     {
         id: 4,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Figure Study',
         date: 1975,
         media: 'Ceramic',
@@ -222,7 +222,7 @@ export const galleryImages = [
     },
     {
         id: 5,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Lithograph',
         date: 1976,
         media: 'Lithograph', // missing media; I guessed
@@ -231,7 +231,7 @@ export const galleryImages = [
     },
     {
         id: 6,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Pencil Study',
         date: 1976,
         media: 'Graphite',
@@ -240,7 +240,7 @@ export const galleryImages = [
     },
     {
         id: 7,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Photo Book',
         date: 1976,
         media: 'Black & White Photography',
@@ -249,7 +249,7 @@ export const galleryImages = [
     },
     {
         id: 8,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Print',
         date: 1976,
         media: 'Silkscreen',
@@ -258,7 +258,7 @@ export const galleryImages = [
     },
     {
         id: 9,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Seismograph',
         date: 1976,
         media: 'Etching',
@@ -267,7 +267,7 @@ export const galleryImages = [
     },
     {
         id: 10,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Self Portrait',
         date: 1976,
         media: 'Ceramic, Wood',
@@ -276,7 +276,7 @@ export const galleryImages = [
     },
     {
         id: 11,
-        gallery: 'pre',
+        category: 'pre-collegiate',
         title: 'Small Painting',
         date: 1975,
         media: 'Acrylic, Gold Leaf',
@@ -286,6 +286,7 @@ export const galleryImages = [
     {
         id: 12,
         title: 'Small Watercolor',
+        category: 'pre-collegiate',
         date: 1976,
         media: 'Watercolor',
         dimensions: '6" x 12"',
@@ -293,7 +294,7 @@ export const galleryImages = [
     },
     {
         id: 13,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Arc',
         date: 1981,
         media: 'Blown Glass',
@@ -302,7 +303,7 @@ export const galleryImages = [
     },
     {
         id: 14,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Ghost-Ship', // should it be hyphenated?
         date: 1981,
         media: 'Glass',
@@ -311,7 +312,7 @@ export const galleryImages = [
     },
     {
         id: 15,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Metals Project',
         date: 1977,
         media: 'Sterling Silver, Brass',
@@ -320,7 +321,7 @@ export const galleryImages = [
     },
     {
         id: 16,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Orbit',
         date: 1981,
         media: 'Glass, Steel',
@@ -329,7 +330,7 @@ export const galleryImages = [
     },
     {
         id: 17,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Three King Vessel',
         date: 1980,
         media: 'Blown Glass',
@@ -338,7 +339,7 @@ export const galleryImages = [
     },
     {
         id: 18,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Three Kings After Rouault',
         date: 1978,
         media: 'Stained Glass',
@@ -347,7 +348,7 @@ export const galleryImages = [
     },
     {
         id: 19,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Wall',
         date: 1981,
         media: 'Blown Glass',
@@ -356,7 +357,7 @@ export const galleryImages = [
     },
     {
         id: 20,
-        gallery: 'undergrad',
+        category: 'undergrad',
         title: 'Wall Ship',
         date: 1981,
         media: 'Glass, Steel',
@@ -365,7 +366,7 @@ export const galleryImages = [
     },
     {
         id: 21,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Hinged Lamp',
         date: 1986,
         media: 'Steel, Found Parts',
@@ -374,7 +375,7 @@ export const galleryImages = [
     },
     {
         id: 22,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Lamp 1',
         date: 1983,
         media: 'Glass, Brass',
@@ -383,7 +384,7 @@ export const galleryImages = [
     },
     {
         id: 23,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Lamp 2',
         date: 1982,
         media: 'Blown Glass, Lamp Parts',
@@ -392,7 +393,7 @@ export const galleryImages = [
     },
     {
         id: 24,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Lamp for Ruth King',
         date: 1983,
         media: 'Glass, Lamp Parts',
@@ -401,7 +402,7 @@ export const galleryImages = [
     },
     {
         id: 25,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Nest',
         date: 1983,
         media: 'Glass, Steel, Brass',
@@ -410,7 +411,7 @@ export const galleryImages = [
     },
     {
         id: 26,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Blue Light Special',
         date: 1990,
         media: 'Copper, Found Parts',
@@ -419,7 +420,7 @@ export const galleryImages = [
     },
     {
         id: 27,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Choice',
         date: 1993,
         media: 'Steel, Stone, Ceramic',
@@ -428,7 +429,7 @@ export const galleryImages = [
     },
     {
         id: 28,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Hinged Arc',
         date: 1993,
         media: 'Wood, Steel, Ceramic, Rubber',
@@ -437,7 +438,7 @@ export const galleryImages = [
     },
     {
         id: 29,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Hinged Pair',
         date: 1993,
         media: 'Steel, Wood',
@@ -446,7 +447,7 @@ export const galleryImages = [
     },
     {
         id: 30,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Rotating Lamp',
         date: 1986,
         media: 'Steel, Glass, Lamp Parts',
@@ -455,7 +456,7 @@ export const galleryImages = [
     },
     {
         id: 31,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'St. Sebastian',
         date: 1987,
         media: 'Glass, Steel',
@@ -464,7 +465,7 @@ export const galleryImages = [
     },
     {
         id: 32,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Street Lamp',
         date: 1986,
         media: 'Found Parts',
@@ -473,7 +474,7 @@ export const galleryImages = [
     },
     {
         id: 33,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Lens',
         date: 1989,
         media: 'Glass, Steel, Rubber',
@@ -482,7 +483,7 @@ export const galleryImages = [
     },
     {
         id: 34,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Cups',
         date: 1994,
         media: 'Steel, Porcelain',
@@ -491,7 +492,7 @@ export const galleryImages = [
     },
     {
         id: 35,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Hinged Vessel',
         date: 1994,
         media: 'Steel, Wood',
@@ -500,7 +501,7 @@ export const galleryImages = [
     },
     {
         id: 36,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'On Point',
         date: 1994,
         media: 'Wood, Graphite',
@@ -509,7 +510,7 @@ export const galleryImages = [
     },
     {
         id: 37,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Picture Vessel',
         date: 1994,
         media: 'High Fire Stonewear',
@@ -518,7 +519,7 @@ export const galleryImages = [
     },
     {
         id: 38,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Quiet Cone',
         date: 1994,
         media: 'Slip Cast Ceramic, Fiber',
@@ -527,7 +528,7 @@ export const galleryImages = [
     },
     {
         id: 39,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Standing Cup',
         date: 1995,
         media: 'Steel, Black Porcelain',
@@ -536,7 +537,7 @@ export const galleryImages = [
     },
     {
         id: 40,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Standing Vessel',
         date: 1995,
         media: 'Wood, Steel, Rope',
@@ -545,7 +546,7 @@ export const galleryImages = [
     },
     {
         id: 41,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Tool Box',
         date: 1995,
         media: 'Wood, Metal',
@@ -554,7 +555,7 @@ export const galleryImages = [
     },
     {
         id: 42,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Hidden Vessel',
         date: 1996,
         media: 'Steel, Handmade Bricks',
@@ -563,7 +564,7 @@ export const galleryImages = [
     },
     {
         id: 43,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Hull',
         date: 1996,
         media: 'Wood, Glass, Canvas',
@@ -572,7 +573,7 @@ export const galleryImages = [
     },
     {
         id: 44,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Reclining Vessel',
         date: 1996,
         media: 'Wood, Roofing Material',
@@ -581,7 +582,7 @@ export const galleryImages = [
     },
     {
         id: 45,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Standing Figure',
         date: 1996,
         media: 'Carved Firebrick',
@@ -590,7 +591,7 @@ export const galleryImages = [
     },
     {
         id: 46,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Tool with Holder',
         date: 1996,
         media: 'Mixed Media',
@@ -599,7 +600,7 @@ export const galleryImages = [
     },
     {
         id: 47,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled',
         date: 1996,
         media: 'Wood, Steel',
@@ -608,7 +609,7 @@ export const galleryImages = [
     },
     {
         id: 48,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Ladle #1',
         date: 1996,
         media: 'Steel, Brass',
@@ -617,7 +618,7 @@ export const galleryImages = [
     },
     {
         id: 49,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Ladle #4',
         date: 1996,
         media: 'Glass, Wood, Metal',
@@ -626,7 +627,7 @@ export const galleryImages = [
     },
     {
         id: 50,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Bed/Vault',
         date: 1997,
         media: 'Mixed Media',
@@ -635,7 +636,7 @@ export const galleryImages = [
     },
     {
         id: 51,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Icon Series I - III',
         date: 1997,
         media: 'Wood, Ceramic, Metal, Leather',
@@ -644,7 +645,7 @@ export const galleryImages = [
     },
     {
         id: 52,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Press',
         date: 1997,
         media: 'Concrete, Metal, Water',
@@ -653,7 +654,7 @@ export const galleryImages = [
     },
     {
         id: 53,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Ride',
         date: 1997,
         media: 'Steel, Wood',
@@ -662,7 +663,7 @@ export const galleryImages = [
     },
     {
         id: 54,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Stack (21 Tool Boxes)',
         date: 1997,
         media: 'Wood',
@@ -671,7 +672,7 @@ export const galleryImages = [
     },
     {
         id: 55,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Three Vessels Tied',
         date: 1997,
         media: 'Pit Fired Ceramic, Cloth',
@@ -680,7 +681,7 @@ export const galleryImages = [
     },
     {
         id: 56,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Point',
         date: 1996,
         media: 'Wood, Steel',
@@ -689,7 +690,7 @@ export const galleryImages = [
     },
     {
         id: 57,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Wesley at Five Being David Hockney',
         date: 1996,
         media: 'Photo Collage',
@@ -698,7 +699,7 @@ export const galleryImages = [
     },
     {
         id: 58,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Driver\'s Seat',
         date: 1998,
         media: 'Mixed Media',
@@ -707,7 +708,7 @@ export const galleryImages = [
     },
     {
         id: 59,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Gideon\'s Lamp',
         date: 1998,
         media: 'Steel, Wood, Ceramic, Gold Leaf, Way', // unsure about 'way'
@@ -716,7 +717,7 @@ export const galleryImages = [
     },
     {
         id: 60,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Marital Aid',
         date: 1998,
         media: 'Mixed Media',
@@ -725,7 +726,7 @@ export const galleryImages = [
     },
     {
         id: 61,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled',
         date: 1997,
         media: 'Wood, Felt Paper',
@@ -734,7 +735,7 @@ export const galleryImages = [
     },
     {
         id: 62,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Adjustable Sculpture #2',
         date: 1997,
         media: 'Wood, Steel',
@@ -743,7 +744,7 @@ export const galleryImages = [
     },
     {
         id: 63,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Ladle #3',
         date: 1997,
         media: 'Steel, Glass',
@@ -752,7 +753,7 @@ export const galleryImages = [
     },
     {
         id: 64,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Tool',
         date: 1997,
         media: 'Wood, Steel',
@@ -761,7 +762,7 @@ export const galleryImages = [
     },
     {
         id: 65,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Waiting',
         date: 1997,
         media: 'Found Objects',
@@ -770,7 +771,7 @@ export const galleryImages = [
     },
     {
         id: 66,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Children\'s Thoughts',
         date: 1999,
         media: 'Mixed Media',
@@ -779,7 +780,7 @@ export const galleryImages = [
     },
     {
         id: 67,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Large Plumb',
         date: 1999,
         media: 'Wood, Aluminum',
@@ -788,7 +789,7 @@ export const galleryImages = [
     },
     {
         id: 68,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Long Box',
         date: 1999,
         media: 'Wood, Steel, Rubber',
@@ -797,7 +798,7 @@ export const galleryImages = [
     },
     {
         id: 69,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'No Title 1',
         date: 1998,
         media: 'Wood, Steel',
@@ -806,7 +807,7 @@ export const galleryImages = [
     },
     {
         id: 70,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'No Title 2',
         date: 1999,
         media: 'Wood, Steel, Rubber',
@@ -815,7 +816,7 @@ export const galleryImages = [
     },
     {
         id: 71,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Reach',
         date: 1999,
         media: 'Wood, Aluminum, Steel, Rubber',
@@ -824,7 +825,7 @@ export const galleryImages = [
     },
     {
         id: 72,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Siblings',
         date: 1999,
         media: 'Wood, Steel',
@@ -833,7 +834,7 @@ export const galleryImages = [
     },
     {
         id: 73,
-        gallery: 'post',
+        category: 'post-collegiate',
         title: 'Untitled Adjustable Sculpture',
         date: 1998,
         media: 'Wood, Steel',
@@ -842,5 +843,5 @@ export const galleryImages = [
     },
 ];
 
-// const for number of items in gallery
+// const for total number of items in the gallery
 export const galleryCount = 73;
