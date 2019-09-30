@@ -46,6 +46,12 @@ class Item extends React.Component {
                 <div className="item-details" key={item.id}>
                     <ItemImages />
                     <div className="item-details-info">
+                        <div className="breadcrumb">
+                            <ul>
+                                <li><Link to='/gallery'>Gallery</Link></li>
+                                <li><Link to={`/${item.category}`}>{item.category}</Link></li>
+                            </ul>
+                        </div>
                         <h1>{item.title}</h1>
                         <p>{item.date}</p>
                         <p>{item.media}</p>
@@ -59,7 +65,6 @@ class Item extends React.Component {
                                 onClick={this.handlePrev} >
                                 <FontAwesomeIcon icon={faChevronLeft} />
                             </Link>
-
                             {/* next item button */}
                             <Link to = {{ 
                                 pathname:`/art`,
