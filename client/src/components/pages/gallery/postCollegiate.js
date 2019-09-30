@@ -5,10 +5,10 @@ import { Link, withRouter } from 'react-router-dom';
 import { galleryImages } from '../../../constants/gallery/galleryDatabase';
 
 
-class PostToPresent extends React.Component {
+class PostCollegiate extends React.Component {
     render() {
-        let postToPresentWork = galleryImages.map(item => {
-            if (item.gallery === 'post') {
+        let postCollegiateWork = galleryImages.map(item => {
+            if (item.category === 'post-collegiate') {
                 return (
                     <div className="item-card" key={item.id}>
                         <div className="item-image">
@@ -25,13 +25,13 @@ class PostToPresent extends React.Component {
         })
         return (
             <div className="container">
-                <h1>1982 - Present</h1>
+                <h1>Post-collegiate</h1>
                 <div className="gallery-container">
-                    { postToPresentWork }
+                    { postCollegiateWork }
                 </div>
             </div>
         );
     }
 }
 
-export default withRouter(PostToPresent);
+export default withRouter(PostCollegiate);
