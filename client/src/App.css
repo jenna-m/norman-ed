@@ -42,6 +42,7 @@ a:hover {
 
 /* Navbar */
 .navbar {
+  z-index: 10;
   position: fixed;
   left: 0;
   top: 0;
@@ -53,7 +54,6 @@ a:hover {
   height: 80px;
   background-color: #ffffff;
   color: #000000;
-  
 }
 
 .logo a {
@@ -175,19 +175,7 @@ ul.dropdown {
 }
 
 
-/* Home Page and RandomImage Component*/
-.home-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.home-side-text {
-  width: 25%;
-}
-
+/* RandomImage Component */
 .home-random-image {
   width: 74%;
   margin-top: 30px;
@@ -208,6 +196,42 @@ ul.dropdown {
   text-align: center;
 }
 
+
+/* Home Page and HomeGallery Component */
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+
+
+/* Home Gallery */
+.home-gallery-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-size: 3em;
+  color: #353535;
+}
+
+.home-gallery-image {
+  width: 400px;
+}
+
+.home-gallery-image img {
+  margin: auto;
+  width: 100%;
+}
 
 /* About Page - Biography and Artist Statement */
 .bio-container {
@@ -299,6 +323,10 @@ ul.dropdown {
   position: fixed;
   left: 0;
   top: 100px;
+}
+
+.item-title {
+  font-size: 2.3em;
 }
 
 .breadcrumb {
@@ -452,4 +480,322 @@ ul.dropdown {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+}
+
+
+
+
+/* Styling for screens lower than 768px */
+@media screen and (max-width: 768px) {
+  /* Universal styling */
+  h1 {
+    margin-left: 10px;
+    font-size: 2.3em;
+    letter-spacing: .1em;
+  }
+  
+  /* NEEDS WORK */
+  /* Navbar */
+  .navbar {
+    display: none;
+    height: 100px;
+  }
+
+  .logo a {
+    margin-left: 20px;
+  }
+
+  .menu {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .menu li {
+    font-family: 'Staatliches', 'Futura', sans-serif;
+    text-transform: uppercase;
+  }
+
+  /* Sub-menu */
+  ul.menu {
+    font-size: 1.4em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+
+  ul.menu li a {
+    display: block; 
+  }
+
+  ul.menu > li:hover {
+    text-decoration: none;
+  }
+
+  ul.menu > li {
+    padding: 0px;
+    display: inline-block; 
+    position: relative; 
+  }
+
+  ul.menu > li ul {
+    display: none; 
+    position: absolute; 
+    left: -1px;
+    width: 250px;
+    margin-top: 1px;
+  }
+
+  ul.menu > li:hover ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  ul.menu > li ul li {
+    display: inline-block;
+  }
+
+  ul.dropdown {
+    position: absolute;
+    z-index: 1000;
+    width: 250px;
+    padding: 0px;
+    background-color: rgba(255, 255 ,255, 0.7);
+  }
+
+  .sublink {
+    padding: 5px;
+  }
+
+
+  /* NEEDS WORK */
+  /* Footer */
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 0px;
+    }
+
+
+  /* (Universal) Page Container */
+  .container {
+    padding-top: 100px;
+    margin: 0px;
+    width: 100%;
+  }
+
+
+  /* 404 Page */
+  ._404-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ._404-container p {
+    font-family: 'Roboto Slab', serif; 
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  /* RandomImage Component */
+  .home-random-image {
+    margin-top: 20px;
+  }
+
+  .random-image-component img {
+    max-width: 300px;
+  }
+
+  .random-image-component p {
+    font-size: 1em;
+  }
+
+
+  /* Home Page and HomeGallery Component */
+  .home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+
+  /* About Page - Biography and Artist Statement */
+  .bio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .bio-text {
+    margin-left: 10px;
+    width: 95%;
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+
+  .bio-image {
+    width: 100%;
+  }
+
+  .bio-image img {
+    width: 100%;
+  }
+
+  .bio-image p {
+    text-align: center;
+  }
+
+
+  /* Artwork Details */
+  .item-details {
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .item-details-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .item-details-single-img {
+    margin: auto;
+    padding-bottom: 60px;
+  }
+
+  .item-details-single-img img {
+    margin: auto;
+    max-width: 300px;
+  }
+
+  .item-details-info {
+    position: static;
+    width: 100%;
+  }
+
+  .item-title {
+    margin-left: 30px;
+    font-size: 1.8em;
+  }
+
+  .breadcrumb {
+    margin-left: 30px;
+    width: 100%;
+  }
+
+  .breadcrumb li {
+    display: inline;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-size: .8em;
+    text-transform: lowercase;
+    color: #000000;
+  }
+
+  .breadcrumb li+li:before {
+    padding: 1em;
+    color: #aaaaaa;
+    font-style: normal;
+    content: "»";
+  }
+
+  .item-details-info p {
+    margin-left: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25em;
+  }
+
+  .prev-next-buttons {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+  }
+
+
+  /* Exhibitions Page */
+  .exhibition-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exhibition-image {
+    width: 100%;
+  }
+
+  .exhibition-image img {
+    width: 80%;
+  }
+
+  .exhibition-info {
+    width: 90%;
+  }
+
+  /* Styling for exhibition info li's */
+  .title {
+    font-size: 1.5em;
+  }
+
+  .venue-and-location {
+    font-size: 1.1em;
+  }
+
+  .description {
+    font-size: 1.1em;
+  }
+
+  .date {
+    padding-bottom: 20px;
+  }
+
+
+  /* Press Page */
+  .press-card {
+    width: 90%;
+  }
+
+  .press-date {
+    padding: 20px 0 10px 0;
+  }
+
+  .press-source {
+    padding: 15px 0 20px 0;
+  }
+
+
+  /* Contact Form */
+  .form-container {
+    width: 100%;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
 }
