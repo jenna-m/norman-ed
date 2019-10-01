@@ -81,6 +81,7 @@ class HomeGallery extends React.Component {
                 { group2 }
                 <div className="home-gallery-card" key="3">Teacher</div>
                 { group3 }
+                <div className="home-gallery-card" key="4">Norman.</div>
             </StackGrid>
         );
     }
