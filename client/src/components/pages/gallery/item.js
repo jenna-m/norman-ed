@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { galleryImages } from '../../../constants/gallery/galleryDatabase';
+import { galleryImages, galleryCount } from '../../../constants/gallery/galleryDatabase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import ItemImages from './itemImages/itemImages';
@@ -52,7 +52,7 @@ class Item extends React.Component {
                                 <li><Link to={`/${item.category}`}>{item.category}</Link></li>
                             </ul>
                         </div>
-                        <h1>{item.title}</h1>
+                        <h1 className="item-title">{item.title}</h1>
                         <p>{item.date}</p>
                         <p>{item.media}</p>
                         <p>{item.dimensions}</p>
