@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 //Import page components
-import Home from '../components/pages/home';
+import Home from '../components/pages/home/home';
 import Bio from '../components/pages/about/bio';
 import ArtistStatement from '../components/pages/about/artistStatement';
 import Gallery from '../components/pages/gallery/gallery';
