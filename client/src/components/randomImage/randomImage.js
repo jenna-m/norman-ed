@@ -1,7 +1,6 @@
 // Generates a random artwork (not based on category)
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { random } from 'lodash';
 import {
     galleryImages,
     galleryCount // total # of items in the gallery
@@ -11,7 +10,7 @@ import {
 class RandomImage extends React.Component {
     render() {
         // const for random image ID
-        const randomImageID = random(galleryCount);
+        const randomImageID = Math.floor(Math.random() * galleryCount) + 1;
         // Generate random image based on ID
         const randomImg = galleryImages.map(item => {
             if (item.id === randomImageID) {
