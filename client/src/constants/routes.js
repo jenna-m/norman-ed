@@ -3,8 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 //Import page components
 import Home from '../components/pages/home/home';
-import Bio from '../components/pages/about/bio';
-import ArtistStatement from '../components/pages/about/artistStatement';
+import About from '../components/pages/about';
 import Gallery from '../components/pages/gallery/gallery';
 import PreCollegiate from '../components/pages/gallery/preCollegiate';
 import Undergrad from '../components/pages/gallery/undergrad';
@@ -26,8 +25,7 @@ export const Routes =
             <Route path="/art" component={ Item } />
             <Route path="/exhibitions" component={ Exhibitions } />
             <Route path="/press" component={ Press } />
-            <Route path="/bio" component={ Bio } />
-            <Route path="/artist-statement" component={ ArtistStatement } />
+            <Route path="/about" component={ About } />
             <Route path="/contact" component={ Contact } />
             <Route component={ NotFound } />
         </Switch>

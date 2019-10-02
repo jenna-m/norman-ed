@@ -1,8 +1,9 @@
 import React from 'react';
-import bioImg from '../../../constants/bio/bio.jpg';
+import bioImg from '../../constants/about/norman.jpg';
 
 
-class Bio extends React.Component {
+
+class About extends React.Component {
     render() {
         // Bio photo credit URL
         const creditURL = "https://artworksjohnstown.wordpress.com/2012/06/03/check-out-some-photos-from-the-opening-night-of-dialogue/";
@@ -24,9 +25,12 @@ class Bio extends React.Component {
                         <p>Photo credit: <a href={ creditURL } target="new">Art Works in Johnstown</a></p>
                     </div>
                 </div>
+                <div className="artist-statement-container">
+                    <h1>Artist Statement</h1>
+                </div>
             </div>
         );
     }
 }
 
-export default Bio;
+export default About;
