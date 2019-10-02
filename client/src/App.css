@@ -80,59 +80,10 @@ a:hover {
 
 .menu li {
   font-family: 'Staatliches', 'Futura', sans-serif;
-  text-transform: uppercase;
-}
-
-/* Sub-menu */
-ul.menu {
+  font-weight: 400;
   font-size: 1.4em;
-  letter-spacing: .15em;
+  letter-spacing: .1em;
   text-transform: uppercase;
-}
-
-ul.menu li a {
-  display: block; 
-}
-
-ul.menu > li:hover {
-  text-decoration: none;
-}
-
-ul.menu > li {
-  padding: 0px;
-  display: inline-block; 
-  position: relative; 
-}
-
-ul.menu > li ul {
-  display: none; 
-  position: absolute; 
-  left: -1px;
-  width: 250px;
-  margin-top: 1px;
-}
-
-ul.menu > li:hover ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-ul.menu > li ul li {
-  display: inline-block;
-}
-
-ul.dropdown {
-  position: absolute;
-  z-index: 1000;
-  width: 250px;
-  padding: 0px;
-  background-color: rgba(255, 255 ,255, 0.7);
-}
-
-.sublink {
-  padding: 5px;
 }
 
 
@@ -249,12 +200,6 @@ ul.dropdown {
 }
 
 
-/* Gallery Menu - WORK IN PROGRESS */
-.gallery-menu {
-  display: none;
-}
-
-
 /* Gallery Container */
 .gallery-container {
   margin: 0 auto;
@@ -265,6 +210,47 @@ ul.dropdown {
   justify-content: space-evenly;
 }
 
+/* Gallery landing page */
+.gallery-landing-container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-container {
+  width: 30%;
+  display: flex;
+  flex: 1;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.category-container h2 {
+  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-weight: 400;
+  font-size: 1.8em;
+  letter-spacing: .1em;
+}
+
+.gallery-home-item-card {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.gallery-home-item-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+/* Gallery category pages */
 .item-card {
   margin: 30px;
   width: 200px;
@@ -502,58 +488,6 @@ ul.dropdown {
   .menu li {
     font-family: 'Staatliches', 'Futura', sans-serif;
     text-transform: uppercase;
-  }
-
-  /* Sub-menu */
-  ul.menu {
-    font-size: 1.4em;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-  }
-
-  ul.menu li a {
-    display: block; 
-  }
-
-  ul.menu > li:hover {
-    text-decoration: none;
-  }
-
-  ul.menu > li {
-    padding: 0px;
-    display: inline-block; 
-    position: relative; 
-  }
-
-  ul.menu > li ul {
-    display: none; 
-    position: absolute; 
-    left: -1px;
-    width: 250px;
-    margin-top: 1px;
-  }
-
-  ul.menu > li:hover ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  ul.menu > li ul li {
-    display: inline-block;
-  }
-
-  ul.dropdown {
-    position: absolute;
-    z-index: 1000;
-    width: 250px;
-    padding: 0px;
-    background-color: rgba(255, 255 ,255, 0.7);
-  }
-
-  .sublink {
-    padding: 5px;
   }
 
 
