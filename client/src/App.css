@@ -56,17 +56,11 @@ a:hover {
   color: #000000;
 }
 
-.logo a {
+.logo img {
   display: flex;
   justify-content: flex-start;
   margin-left: 50px;
-  color: #3d5c36;
-  font-family: 'Staatliches', 'Futura', sans-serif;
-  font-size: 2em;
-}
-
-.logo a:hover {
-  text-decoration: none;
+  width: 50px;
 }
 
 .menu {
@@ -84,6 +78,10 @@ a:hover {
   font-size: 1.4em;
   letter-spacing: .1em;
   text-transform: uppercase;
+}
+
+.menu-active {
+  text-decoration: underline;
 }
 
 
@@ -106,7 +104,7 @@ a:hover {
 
 /* (Universal) Page Container */
 .container {
-  padding-top: 100px;
+  padding-top: 120px;
   width: 100%;
 }
 
@@ -552,6 +550,8 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  
   
 
   /* About Page - Biography and Artist Statement */
