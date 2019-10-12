@@ -1,59 +1,92 @@
-import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as yup from 'yup';
+// Not yet fully functioning; still need to add name and email fields
 
-const schema = yup.object().shape({
-    name: yup.string()
-        .min(2, 'Name must be at least 2 characters')
-        .max(50, 'Name cannot exceed 50 characters')
-        .required('Name is required'),
-    email: yup.string()
-        .email('Valid email is required')
-        .required('Email is required'),
-    message: yup.string()
-        .min(10, 'Message must be at least 10 characters')
-        .max(600, 'Message cannot exceed 600 characters')
-        .required('Message is required')
-});
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class ContactForm extends React.Component {
+export default class ContactForm extends Component {
+    state = {
+        message: '',
+        formSubmitted: false
+    };
+
+    handleCancel = this.handleCancel.bind(this);
+    handleChange = this.handleChange.bind(this);
+    handleSubmit = this.handleSubmit.bind(this);
+
+    static sender = 'sender@example.com';
+
+    handleCancel() {
+        this.setState({
+            message: ''
+        });
+      }
+    
+    handleChange(event) {
+    this.setState({
+        message: event.target.value
+    });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+
+        const {
+            REACT_APP_EMAILJS_RECEIVER: receiverEmail,
+            REACT_APP_EMAILJS_TEMPLATEID: template,
+            REACT_APP_EMAILJS_USERID: user,
+        } = this.props.env;
+
+        this.sendMessage(
+            template,
+            this.sender,
+            receiverEmail,
+            this.state.message,
+            user
+        );
+
+        this.setState({
+            formSubmitted: true
+        });
+    }
+
+    sendMessage(templateId, senderEmail, receiverEmail, message, user) {
+        window.emailjs.send('default_service', templateId, {
+            senderEmail, receiverEmail, message
+        },
+        user
+        )
+        .then(res => {
+            this.setState({
+                formEmailSent: true
+            });
+        })
+        // Error handling
+        .catch(err => console.error('Failed to send message. Error: ', err));
+    }
+
     render() {
         return (
-            <div className="contact-form-content">
-                <Formik
-                    validationSchema={schema}
-                    initialValues={{
-                        name: '', 
-                        email: '', 
-                        message: '' 
-                    }}
-                    onSubmit={(values, { setSubmitting }) => {
-                        setTimeout(() => {
-                            alert(JSON.stringify(values, null, 2));
-                            setSubmitting(false);
-                        }, 400);
-                    }}
-                    >
-                        {({ isSubmitting }) => (
-                            <Form id="contact-form" role="form">
-                                <label for name="name">Name</label>
-                                <Field type="name" name="name" id="name" />
-                                <ErrorMessage name="name" component="span" />
-                                <label for name="email">Email</label>
-                                <Field type="email" name="email" id="email" />
-                                <ErrorMessage name="email" component="span" />
-                                <label for name="message">Message</label>
-                                <Field component="textarea" name="message" id="message" />
-                                <ErrorMessage name="message" component="span" />
-                                <button type="submit" disabled={isSubmitting} >
-                                    Send
-                                </button>
-                            </Form>
-                        )}
-                </Formik>
-            </div>
+            <form className="contact-form" onSubmit={this.handleSubmit}>
+                <textarea 
+                    className="text-input"
+                    id="message-entry"
+                    name="message-entry"
+                    onChange={this.handleChange}
+                    placeholder="Enter your message here"
+                    required
+                    value={this.state.message}
+                />
+                <div className="button-group">
+                    <button className="button-cancel" onClick={this.handleCancel}>
+                        Cancel
+                    </button>
+                    <input type="submit" value="Submit" className="button-submit" />
+                </div>
+            </form>
         );
     }
 }
 
-export default ContactForm;
+ContactForm.propTypes = {
+    env: PropTypes.object.isRequired
+};
