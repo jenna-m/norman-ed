@@ -1,5 +1,5 @@
 import React from 'react';
-import { exhibitionsInfo } from '../../constants/exhibitions/exhibitionsDatabase';
+import { exhibitionsInfo } from '../constants/exhibitions/exhibitionsDatabase';
 
 
 class Exhibitions extends React.Component {

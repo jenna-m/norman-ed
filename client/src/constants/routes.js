@@ -2,17 +2,17 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 //Import page components
-import Home from '../components/pages/home/home';
-import About from '../components/pages/about';
-import Gallery from '../components/pages/gallery/gallery';
-import PreCollegiate from '../components/pages/gallery/preCollegiate';
-import Undergrad from '../components/pages/gallery/undergrad';
-import PostCollegiate from '../components/pages/gallery/postCollegiate';
-import Item from '../components/pages/gallery/item';
-import Exhibitions from '../components/pages/exhibitions';
-import Press from '../components/pages/press';
-import Contact from '../components/pages/contact/contact';
-import NotFound from '../components/pages/404';
+import Home from '../components/home/home';
+import About from '../components/about';
+import Gallery from '../components/gallery/gallery';
+import PreCollegiate from '../components/gallery/preCollegiate';
+import Undergrad from '../components/gallery/undergrad';
+import PostCollegiate from '../components/gallery/postCollegiate';
+import Item from '../components/gallery/item';
+import Exhibitions from '../components/exhibitions';
+import Press from '../components/press';
+import Contact from '../components/contact/contact';
+import NotFound from '../components/404';
 
 export const Routes = 
     <div>

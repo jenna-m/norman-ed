@@ -1,7 +1,7 @@
 // Renders image tiles on home page
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { galleryImages } from '../../../constants/gallery/galleryDatabase';
+import { galleryImages } from '../../constants/gallery/galleryDatabase';
 import StackGrid, { transitions } from 'react-stack-grid';
 
 const { fadeUp } = transitions;

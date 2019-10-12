@@ -1,5 +1,5 @@
 import React from 'react';
-import { pressArticles } from '../../constants/press/pressDatabase';
+import { pressArticles } from '../constants/press/pressDatabase';
 
 class Press extends React.Component {
     render() {

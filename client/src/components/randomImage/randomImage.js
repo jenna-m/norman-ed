@@ -1,4 +1,5 @@
 // Generates a random artwork (not based on category)
+// Used on the 404 page
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import {

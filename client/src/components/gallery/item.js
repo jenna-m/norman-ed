@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { galleryImages, galleryCount } from '../../../constants/gallery/galleryDatabase';
+import { galleryImages } from '../../constants/gallery/galleryDatabase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import ItemImages from './itemImages/itemImages';

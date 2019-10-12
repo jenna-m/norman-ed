@@ -1,7 +1,7 @@
 // Renders all works with the gallery 'undergrad'
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { galleryImages } from '../../../constants/gallery/galleryDatabase';
+import { galleryImages } from '../../constants/gallery/galleryDatabase';
 
 
 class Undergrad extends React.Component {

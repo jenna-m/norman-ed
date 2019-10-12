@@ -1,7 +1,5 @@
 import React from 'react';
-import bioImg from '../../constants/about/norman.jpg';
-
-
+import bioImg from '../constants/about/norman.jpg';
 
 class About extends React.Component {
     render() {

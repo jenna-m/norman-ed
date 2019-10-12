@@ -1,5 +1,5 @@
 import React from 'react';
-import { galleryImages } from '../../../../constants/gallery/galleryDatabase';
+import { galleryImages } from '../../../constants/gallery/galleryDatabase';
 import RenderImage from './renderImage';
 
 

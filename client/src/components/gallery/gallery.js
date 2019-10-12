@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { galleryImages } from '../../../constants/gallery/galleryDatabase';
+import { galleryImages } from '../../constants/gallery/galleryDatabase';
 
 
 class Gallery extends React.Component {
