@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './contactForm';
+import PropTypes from 'prop-types';
 
 class Contact extends React.Component {
     render() {
@@ -7,11 +8,15 @@ class Contact extends React.Component {
             <div className="container">
                 <h1>Contact</h1>
                 <div className="form-container">
-                    <ContactForm />
+                    <ContactForm env={this.props.env} />
                 </div>
             </div>
         );
     }
 }
+
+Contact.propTypes = {
+    env: PropTypes.object.isRequired
+};
 
 export default Contact;
