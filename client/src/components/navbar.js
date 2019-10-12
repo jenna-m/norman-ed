@@ -12,11 +12,21 @@ class Navbar extends React.Component {
                     </NavLink>
                 </div>
                 <ul className="menu">
-                    <li className="menu-category"><NavLink to="/gallery">Gallery</NavLink></li>
-                    <li className="menu-category"><NavLink to="/exhibitions">Exhibitions</NavLink></li>
-                    <li className="menu-category"><NavLink to="/press">Press</NavLink></li>
-                    <li className="menu-category"><NavLink to="/about">About</NavLink></li>
-                    <li className="menu-category"><NavLink to="/contact">Contact</NavLink></li>
+                    <li className="menu-category">
+                        <NavLink to="/gallery" activeClassName="chosen">Gallery</NavLink>
+                    </li>
+                    <li className="menu-category">
+                        <NavLink to="/exhibitions" activeClassName="chosen">Exhibitions</NavLink>
+                    </li>
+                    <li className="menu-category">
+                        <NavLink to="/press" activeClassName="chosen">Press</NavLink>
+                    </li>
+                    <li className="menu-category">
+                        <NavLink to="/about" activeClassName="chosen">About</NavLink>
+                    </li>
+                    <li className="menu-category">
+                        <NavLink to="/contact" activeClassName="chosen">Contact</NavLink>
+                    </li>
                 </ul>
             </div>
         );

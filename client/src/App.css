@@ -80,7 +80,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-.menu-active {
+.menu a.chosen {
   text-decoration: underline;
 }
 
