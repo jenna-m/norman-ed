@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { galleryImages } from '../../constants/gallery/galleryDatabase';
+import { galleryImages, galleryCount } from '../../constants/gallery/galleryDatabase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import ItemImages from './itemImages/itemImages';
@@ -40,6 +40,57 @@ class Item extends React.Component {
         // prev and next item IDs
         const prevItemID = item.id - 1;
         const nextItemID = item.id + 1;
+
+        const showButtons = () => {
+            if (item.id === 1) {
+                return (
+                    <div className="prev-next-buttons">
+                        {/* next item button */}
+                        <Link to = {{ 
+                            pathname:`/art`,
+                            search: `?id=${nextItemID}`
+                            }} 
+                            onClick={this.handleNext} >
+                            <FontAwesomeIcon icon={faChevronRight} />
+                        </Link>
+                    </div>
+                );
+            } else if (item.id === galleryCount) {
+                return (
+                    <div className="prev-next-buttons">
+                        {/* previous item button */}
+                        <Link to = {{ 
+                            pathname:`/art`,
+                            search: `?id=${prevItemID}`
+                            }} 
+                            onClick={this.handlePrev} >
+                            <FontAwesomeIcon icon={faChevronLeft} />
+                        </Link>
+                    </div>
+                );
+            } else {
+                return (
+                    <div className="prev-next-buttons">
+                        {/* previous item button */}
+                        <Link to = {{ 
+                            pathname:`/art`,
+                            search: `?id=${prevItemID}`
+                            }} 
+                            onClick={this.handlePrev} >
+                            <FontAwesomeIcon icon={faChevronLeft} />
+                        </Link>
+                        {/* next item button */}
+                        <Link to = {{ 
+                            pathname:`/art`,
+                            search: `?id=${nextItemID}`
+                            }} 
+                            onClick={this.handleNext} >
+                            <FontAwesomeIcon icon={faChevronRight} />
+                        </Link>
+                    </div>
+                );
+            }
+        }
         
         return (
             <div className="container">
@@ -56,24 +107,7 @@ class Item extends React.Component {
                         <p>{item.date}</p>
                         <p>{item.media}</p>
                         <p>{item.dimensions}</p>
-                        <div className="prev-next-buttons">
-                            {/* previous item button */}
-                            <Link to = {{ 
-                                pathname:`/art`,
-                                search: `?id=${prevItemID}`
-                                }} 
-                                onClick={this.handlePrev} >
-                                <FontAwesomeIcon icon={faChevronLeft} />
-                            </Link>
-                            {/* next item button */}
-                            <Link to = {{ 
-                                pathname:`/art`,
-                                search: `?id=${nextItemID}`
-                                }} 
-                                onClick={this.handleNext} >
-                                <FontAwesomeIcon icon={faChevronRight} />
-                            </Link>
-                        </div>
+                        { showButtons() }
                     </div>
                 </div>
             </div>
