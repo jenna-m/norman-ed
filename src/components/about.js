@@ -23,9 +23,6 @@ class About extends React.Component {
                         <p>Photo credit: <a href={ creditURL } target="new">Art Works in Johnstown</a></p>
                     </div>
                 </div>
-                <div className="artist-statement-container">
-                    <h1>Artist Statement</h1>
-                </div>
             </div>
         );
     }
