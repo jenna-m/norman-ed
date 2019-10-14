@@ -4,7 +4,7 @@ import {
     Switch,
     BrowserRouter as Router,
 } from 'react-router-dom';
-import Navbar from './navbar';
+import Navbar from './navbar/navbar';
 import Footer from './footer';
 import ScrollToTop from './scrollToTop';
 import { Routes } from '../constants/routes';
