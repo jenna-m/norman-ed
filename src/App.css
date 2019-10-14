@@ -36,32 +36,49 @@ a {
 }
 
 
-/* Hamburger Menu */
+/* Sidebar Menu */
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 30px;
   left: 26px;
   top: 26px;
 }
+
+/* "Menu" text */
+.bm-burger-button::after {
+  margin-left: 60px;
+  color: #353535;
+  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  content: "Menu";
+}
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #000000;
+  background: #353535;
 }
+
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #000000;
+  background: #353535;
 }
+
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
 }
+
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #000000;
+  background: #353535;
 }
+
 /*
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
@@ -70,15 +87,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position: fixed;
   height: 100%;
 }
+
 /* General sidebar styles */
 .bm-menu {
   background: #ffffff;
-  padding: 2em 1.2em 0;
-  font-size: 1.15em;
+  padding: 3em 1.4em 0;
+  font-size: 2em;
 }
+
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: #ffffff;
 }
 
 /* Wrapper for item list */
@@ -88,11 +107,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   flex-direction: column;
 }
 
-.dropdown-logo img {
-  display: flex;
-  justify-content: flex-start;
-  width: 80px;
-  outline: 0;
+.bm-item-list .menu-link {
+  padding-bottom: 20px;
+}
+
+.sidebar-logo img {
+  width: 50%;
 }
 
 
@@ -252,6 +272,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bio-text {
   margin-left: 50px;
   width: 55%;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.05em;
   line-height: 1.7em;
 }
@@ -265,7 +286,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .bio-image p {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lato', sans-serif;
   font-size: .8em;
 }
 
@@ -536,10 +557,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     letter-spacing: .1em;
   }
   
-  /* NEEDS WORK */
-  /* Navbar */
-  
-
 
   /* Footer */
   .footer {
@@ -555,7 +572,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .footer p {
-    font-size: .7em;
+    font-size: .75em;
   }
 
 
@@ -624,12 +641,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
   
   
-  /* About Page - Biography and Artist Statement */
+  /* About Page */
   .bio-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
   }
 
   .bio-text {
@@ -640,11 +658,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .bio-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    padding-top: 20px;
   }
 
   .bio-image img {
-    width: 100%;
+    width: 75%;
   }
 
   .bio-image p {
@@ -786,4 +808,110 @@ Note: Beware of modifying this element as it can break the animations - you shou
     align-items: center;
   }
 
+}
+
+
+/* Styling for larger screens in landscape mode */
+@media screen and (max-width: 812px) {
+  /* Footer */
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  /* Gallery landing page */
+  .gallery-landing-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category-container h2 {
+    padding-bottom: 50px;
+  }
+
+  /* Artwork Details */
+  .item-details {
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .item-details-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .item-details-single-img {
+    margin: auto;
+    padding-bottom: 60px;
+  }
+
+  .item-details-single-img img {
+    margin: auto;
+    max-width: 300px;
+  }
+
+  .item-details-info {
+    position: static;
+    width: 100%;
+  }
+
+  .item-title {
+    margin-left: 30px;
+    font-size: 2.2em;
+  }
+
+  .breadcrumb {
+    margin-left: 30px;
+    width: 100%;
+  }
+
+  .breadcrumb li {
+    display: inline;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-size: .9em;
+    text-transform: lowercase;
+    color: #000000;
+  }
+
+  .breadcrumb li+li:before {
+    padding: 1em;
+    color: #aaaaaa;
+    font-style: normal;
+    content: "»";
+  }
+
+  .item-details-info p {
+    margin-left: 30px;
+    font-size: 1.5em;
+  }
+
+  .prev-next-buttons {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3em;
+  }
+
+
+  
 }
