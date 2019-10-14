@@ -36,7 +36,7 @@ class Sidebar extends React.Component {
                 isOpen={this.state.menuOpen}
                 onStateChange={(state) => this.handleStateChange(state)}
             >
-                <div className="dropdown-logo">
+                <div className="sidebar-logo">
                     <NavLink to="/" onClick={() => this.closeMenu()}>
                         <img src={logo} alt="Norman Ed Logo" />
                     </NavLink>
