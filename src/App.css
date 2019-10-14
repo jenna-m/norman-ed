@@ -96,7 +96,7 @@ a {
 }
 
 .menu a.chosen {
-  color: #353535;
+  color: #000000;
 }
 
 
@@ -214,16 +214,6 @@ a {
 }
 
 
-/* Gallery Container */
-.gallery-container {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 /* Gallery landing page */
 .gallery-landing-container {
   margin: 0 auto;
@@ -261,6 +251,17 @@ a {
   width: 300px;
   height: 300px;
   object-fit: cover;
+}
+
+
+/* Gallery (category) Container */
+.gallery-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 
@@ -481,31 +482,9 @@ a {
   
   /* NEEDS WORK */
   /* Navbar */
-  .navbar {
-    display: none;
-    height: 100px;
-  }
-
-  .logo a {
-    margin-left: 20px;
-  }
-
-  .menu {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-  }
-
-  .menu li {
-    font-family: 'Staatliches', 'Futura', sans-serif;
-    text-transform: uppercase;
-  }
+  
 
 
-  /* NEEDS WORK */
   /* Footer */
   .footer {
     width: 100%;
@@ -514,10 +493,14 @@ a {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 20px;
     padding: 0px;
-    }
+  }
+
+  .footer p {
+    font-size: .7em;
+  }
 
 
   /* (Universal) Page Container */
@@ -567,9 +550,24 @@ a {
     align-items: flex-start;
   }
 
-  
-  
 
+  /* Gallery landing page */
+  .category-container {
+    width: 100%;
+  }
+
+  .category-container h2 {
+    padding-bottom: 50px;
+    font-size: 1.5em;
+  }
+
+  .gallery-home-item-card {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  
   /* About Page - Biography and Artist Statement */
   .bio-container {
     width: 100%;
@@ -581,7 +579,7 @@ a {
   .bio-text {
     margin-left: 10px;
     width: 95%;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.7em;
   }
 
