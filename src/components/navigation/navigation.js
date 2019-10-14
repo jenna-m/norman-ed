@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from './dropdown';
+import Sidebar from './sidebar';
 import Navbar from './navbar';
 
 class Navigation extends React.Component {
@@ -7,7 +7,7 @@ class Navigation extends React.Component {
         return (
             <div>
                 {/* Render dropdown when screen size is 768px wide*/}
-                <Dropdown />
+                <Sidebar />
 
                 {/* Render Navbar when screen size is greater than 768px wide */}
                 <Navbar />
