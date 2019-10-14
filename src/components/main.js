@@ -4,7 +4,7 @@ import {
     Switch,
     BrowserRouter as Router,
 } from 'react-router-dom';
-import Navbar from './navbar/navbar';
+import Navigation from './navigation/navigation';
 import Footer from './footer';
 import ScrollToTop from './scrollToTop';
 import { Routes } from '../constants/routes';
@@ -15,7 +15,7 @@ class Main extends React.Component {
         return (
             <Router>
                 <ScrollToTop>
-                    <Navbar />
+                    <Navigation />
                     <Switch>
                         { Routes }
                     </Switch>
