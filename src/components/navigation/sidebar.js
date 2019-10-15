@@ -43,6 +43,9 @@ class Sidebar extends React.Component {
                 </div>
                 <ul className="menu">
                     <li className="menu-link">
+                        <NavLink to="/" onClick={() => this.closeMenu()}>Home</NavLink>
+                    </li>
+                    <li className="menu-link">
                         <NavLink to="/gallery" onClick={() => this.closeMenu()}>Gallery</NavLink>
                     </li>
                     <li className="menu-link">
