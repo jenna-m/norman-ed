@@ -1,96 +1,92 @@
-import React from 'react';
-import axios from 'axios';
+// Not yet fully functioning; still need to add name and email fields
 
-class ContactForm extends React.Component {
-    constructor(props) {
-        super(props);
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-        this.state = {
-            name: '',
-            email: '',
-            message: '',
-            buttonText: 'Submit'
-        };
-    }
+export default class ContactForm extends Component {
+    state = {
+        message: '',
+        formSubmitted: false
+    };
 
-    formSubmit = (e) => {
-        e.preventDefault();
+    handleCancel = this.handleCancel.bind(this);
+    handleChange = this.handleChange.bind(this);
+    handleSubmit = this.handleSubmit.bind(this);
 
+    static sender = 'sender@example.com';
+
+    handleCancel() {
         this.setState({
-            buttonText: 'Submitting...'
+            message: ''
         });
-
-        let data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-        }
-
-        axios.post('API_URI', data)
-        .then( res => {
-            this.setState({ sent: true }, this.resetForm())
-        })
-        .catch( () => {
-            console.log('Message not sent.')
-        })
-    }
-
-    resetForm = () => {
-        this.setState({
-            name: '',
-            email: '',
-            message: '',
-            buttonText: 'Message Sent'
-        });
-    }
+      }
     
+    handleChange(event) {
+    this.setState({
+        message: event.target.value
+    });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+
+        const {
+            REACT_APP_EMAILJS_RECEIVER: receiverEmail,
+            REACT_APP_EMAILJS_TEMPLATEID: template,
+            REACT_APP_EMAILJS_USERID: user,
+        } = this.props.env;
+
+        this.sendMessage(
+            template,
+            this.sender,
+            receiverEmail,
+            this.state.message,
+            user
+        );
+
+        this.setState({
+            formSubmitted: true
+        });
+    }
+
+    sendMessage(templateId, senderEmail, receiverEmail, message, user) {
+        window.emailjs.send('default_service', templateId, {
+            senderEmail, receiverEmail, message
+        },
+        user
+        )
+        .then(res => {
+            this.setState({
+                formEmailSent: true
+            });
+        })
+        // Error handling
+        .catch(err => console.error('Failed to send message. Error: ', err));
+    }
+
     render() {
         return (
-            <div className="contact-form-container">
-                <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
-                    { /* Name Input */ }
-                    <label className="contact-name" htmlFor="contact-name">Name</label>
-                    <input
-                        onChange={ e => this.setState=({ name: e.target.value })}
-                        name="name"
-                        className="contact-name"
-                        type="text"
-                        placeholder="Your Name"
-                        value={this.state.name}
-                        required
-                    />
-
-                    { /* Email Input */ }
-                    <label className="contact-email" htmlFor="contact-email">Email</label>
-                    <input
-                        onChange={ e => this.setState({ email: e.target.value })}
-                        name="email"
-                        className="contact-email"
-                        type="text"
-                        placeholder="you@email.com"
-                        value={this.state.email}
-                        required
-                    />
-
-                    { /* Message Input */ }
-                    <label className="contact-message" htmlFor="message-input">Message</label>
-                    <textarea
-                        onChange={ e => this.setState({ message: e.target.value })}
-                        name="message"
-                        className="message-input"
-                        type="text"
-                        placeholder="Please write your message here"
-                        value={this.state.message}
-                        required
-                    />
-
-                    { /* Buttons */ }
-                    <button type="submit" className="contact-submit-button">{ this.state.buttonText }</button>
-                </form>
-            </div>
-
+            <form className="contact-form" onSubmit={this.handleSubmit}>
+                <textarea 
+                    className="text-input"
+                    id="message-entry"
+                    name="message-entry"
+                    onChange={this.handleChange}
+                    placeholder="Enter your message here"
+                    required
+                    value={this.state.message}
+                />
+                <div className="button-group">
+                    <button className="button-cancel" onClick={this.handleCancel}>
+                        Cancel
+                    </button>
+                    <input type="submit" value="Submit" className="button-submit" />
+                </div>
+            </form>
         );
     }
 }
 
-export default ContactForm;
+ContactForm.propTypes = {
+    env: PropTypes.object.isRequired
+};
