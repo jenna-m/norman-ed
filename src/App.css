@@ -259,7 +259,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 100%;
 }
 
-/* About Page - Biography and Artist Statement */
+/* About Page */
 .bio-container {
   width: 100%;
   display: flex;
@@ -271,9 +271,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bio-text {
   margin-left: 50px;
-  width: 55%;
+  width: 60%;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.05em;
+  font-size: 1.35em;
   line-height: 1.7em;
 }
 
@@ -653,7 +653,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .bio-text {
     margin-left: 10px;
     width: 95%;
-    font-size: 1em;
+    font-size: 1.35em;
     line-height: 1.7em;
   }
 
@@ -674,6 +674,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
 
+  /* Artwork Details */
   /* Artwork Details */
   .item-details {
     margin-left: 0px;
@@ -703,17 +704,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .item-details-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: static;
     width: 100%;
   }
 
   .item-title {
-    margin-left: 30px;
+    margin-left: 0;
     font-size: 2.2em;
   }
 
   .breadcrumb {
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
     width: 100%;
   }
 
@@ -734,17 +740,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .item-details-info p {
-    margin-left: 30px;
+    margin-left: 0px;
+    margin-bottom: 10px;
     font-size: 1.5em;
   }
 
   .prev-next-buttons {
-    padding-top: 30px;
+    padding-top:  90px;
+    padding-bottom: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 60%;
     font-size: 3em;
   }
-
+  
 
   /* Exhibitions Page */
   .exhibition-card {
@@ -840,78 +849,4 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .category-container h2 {
     padding-bottom: 50px;
   }
-
-  /* Artwork Details */
-  .item-details {
-    margin-left: 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .item-details-images {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-  }
-
-  .item-details-single-img {
-    margin: auto;
-    padding-bottom: 60px;
-  }
-
-  .item-details-single-img img {
-    margin: auto;
-    max-width: 300px;
-  }
-
-  .item-details-info {
-    position: static;
-    width: 100%;
-  }
-
-  .item-title {
-    margin-left: 30px;
-    font-size: 2.2em;
-  }
-
-  .breadcrumb {
-    margin-left: 30px;
-    width: 100%;
-  }
-
-  .breadcrumb li {
-    display: inline;
-    font-family: 'Roboto Slab', serif;
-    font-style: italic;
-    font-size: .9em;
-    text-transform: lowercase;
-    color: #000000;
-  }
-
-  .breadcrumb li+li:before {
-    padding: 1em;
-    color: #aaaaaa;
-    font-style: normal;
-    content: "»";
-  }
-
-  .item-details-info p {
-    margin-left: 30px;
-    font-size: 1.5em;
-  }
-
-  .prev-next-buttons {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 3em;
-  }
-
-
-  
 }
