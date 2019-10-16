@@ -8,12 +8,12 @@ class Navigation extends React.Component {
         return (
             <div>
                 {/* Render dropdown when screen size is max 899px wide */}
-                <MediaQuery maxDeviceWidth={899}>
+                <MediaQuery maxWidth={899}>
                     <Sidebar />
                 </MediaQuery>
 
                 {/* Render Navbar when screen size is at least 900px wide */}
-                <MediaQuery minDeviceWidth={900}>
+                <MediaQuery minWidth={900}>
                     <Navbar />
                 </MediaQuery>
             </div>
