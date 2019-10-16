@@ -14,23 +14,23 @@ class Navbar extends React.Component {
                 <ul className="menu">
                     <li className="menu-link">
                         <NavLink to="/gallery" activeClassName="chosen">Gallery</NavLink>
-                        <div class="slider"></div>
+                        <div className="slider"></div>
                     </li>
                     <li className="menu-link">
                         <NavLink to="/exhibitions" activeClassName="chosen">Exhibitions</NavLink>
-                        <div class="slider"></div>
+                        <div className="slider"></div>
                     </li>
                     <li className="menu-link">
                         <NavLink to="/press" activeClassName="chosen">Press</NavLink>
-                        <div class="slider"></div>
+                        <div className="slider"></div>
                     </li>
                     <li className="menu-link">
                         <NavLink to="/about" activeClassName="chosen">About</NavLink>
-                        <div class="slider"></div>
+                        <div className="slider"></div>
                     </li>
                     <li className="menu-link">
                         <NavLink to="/contact" activeClassName="chosen">Contact</NavLink>
-                        <div class="slider"></div>
+                        <div className="slider"></div>
                     </li>
                 </ul>
             </div>
