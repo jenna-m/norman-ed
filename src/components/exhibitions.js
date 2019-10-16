@@ -8,7 +8,7 @@ class Exhibitions extends React.Component {
             return (
                 <div className="exhibition-card" key={item.id}>
                     <div className="exhibition-image">
-                        <img src={item.src} />
+                        <img src={item.src} alt={item.title} />
                     </div>
                     <div className="exhibition-info">
                         <ul>

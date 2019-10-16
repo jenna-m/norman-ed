@@ -26,10 +26,10 @@ class ItemImages extends React.Component {
         const itemImages = [];
 
         // forEach element in item.src...
-        item.src.forEach( (src, i) => {
+        item.src.forEach( (src, i, title) => {
             /* pass props src and index to RenderImage component,
             and push to itemImages array */
-            itemImages.push(<RenderImage imageUrl={src} key={i} />)
+            itemImages.push(<RenderImage imageUrl={src} key={i} alt={title} />)
         });
         
         return (
