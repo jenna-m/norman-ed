@@ -66,6 +66,8 @@ export default class ContactForm extends Component {
 
     render() {
         return (
+            <div>
+            { console.log(process.env) }
             <form className="contact-form" onSubmit={this.handleSubmit}>
                 <textarea 
                     className="text-input"
@@ -83,6 +85,7 @@ export default class ContactForm extends Component {
                     <input type="submit" value="Submit" className="button-submit" />
                 </div>
             </form>
+            </div>
         );
     }
 }
