@@ -26,16 +26,16 @@ const emailJSUserID = 'user_cVacpT4HoGWc7Omos0X8P'
 // Yup schema
 const schema = yup.object().shape({
     name: yup.string()
-        .min(2, 'Name must be at least 2 characters')
-        .max(50, 'Name cannot be over 50 characters')
-        .required('Name is required'),
+        .min(2, 'Must be at least 2 characters')
+        .max(50, 'Cannot be over 50 characters')
+        .required('Required'),
     email: yup.string()
-        .email('Email is invalid')
-        .required('Email is required'),
+        .email('Must be a valid email')
+        .required('Required'),
     message: yup.string()
-        .min(10, 'Message must be at least 10 characters')
-        .max(600, 'Message cannot be over 600 characters')
-        .required('Message is required')
+        .min(10, 'Must be at least 10 characters')
+        .max(600, 'Cannot be over 600 characters')
+        .required('Required')
 });
 
 
@@ -94,7 +94,10 @@ export const ContactForm = () => {
                     <Form id="contact-form" role="form">
                         <fieldset>
                             { /* Name Input */ }
-                            <label for name="name">Your Name</label>
+                            <label for name="name">
+                                Your Name
+                                <ErrorMessage name="name" component="error-text" />
+                            </label>
                             <Field
                                 className="field"
                                 type="name"
@@ -102,13 +105,12 @@ export const ContactForm = () => {
                                 placeholder={randomName}
                                 onBlur={handleBlur}
                             />
-                            <ErrorMessage
-                                name="name"
-                                component="h6"
-                            />
 
                             { /* Email Input */ }
-                            <label for name="email">Your Email</label>
+                            <label for name="email">
+                                Your Email
+                                <ErrorMessage name="email" component="error-text" />
+                            </label>
                             <Field
                                 className="field"
                                 type="email"
@@ -116,13 +118,12 @@ export const ContactForm = () => {
                                 placeholder="you@example.com"
                                 onBlue={handleBlur}
                             />
-                            <ErrorMessage
-                                name="email"
-                                component="h6"
-                            />
 
                             { /* Message Input */ }
-                            <label for name="message">Message</label>
+                            <label for name="message">
+                                Message
+                                <ErrorMessage name="message" component="error-text" />
+                            </label>
                             <Field
                                 className="textarea"
                                 type="message"
@@ -130,10 +131,6 @@ export const ContactForm = () => {
                                 placeholder="Dear Norman..."
                                 component="textarea"
                                 onBlue={handleBlur}
-                            />
-                            <ErrorMessage
-                                name="message"
-                                component="h6"
                             />
 
                             <button

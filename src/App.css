@@ -558,6 +558,17 @@ label {
   font-weight: 600;
 }
 
+/* Error message span */
+error-text {
+  margin-left: 20px;
+  display: inline;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 400;
+  font-size: .9em;
+  color: #353535;
+}
+
 /* Name and Email fields */
 .field {
   margin: 10px 0 5px 0;
@@ -589,17 +600,6 @@ textarea {
   font-size: 1em;
   line-height: 1.7em;
   color: #000000;
-}
-
-/* Error message span */
-h6 {
-  margin-bottom: 20px;
-  text-align: center;
-  text-transform: lowercase;
-  font-style: italic;
-  font-weight: 400;
-  font-size: .85em;
-  color: #353535;
 }
 
 /* Submit button */
