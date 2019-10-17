@@ -28,6 +28,7 @@ class RandomImage extends React.Component {
                     </div>
                 );
             }
+            return null;
         })
         return (
             <div>

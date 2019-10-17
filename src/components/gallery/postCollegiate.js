@@ -22,6 +22,7 @@ class PostCollegiate extends React.Component {
                     </div>
                 )
             }
+            return null;
         })
         return (
             <div className="container">

@@ -24,6 +24,7 @@ class Gallery extends React.Component {
                     </div>
                 )
             }
+            return null;
         })
 
         const undergradItem = galleryImages.map(item => {
@@ -38,6 +39,7 @@ class Gallery extends React.Component {
                     </div>
                 )
             }
+            return null;
         })
 
         const postCollegiateItem = galleryImages.map(item => {
@@ -52,6 +54,7 @@ class Gallery extends React.Component {
                     </div>
                 )
             }
+            return null;
         })
         
         return (

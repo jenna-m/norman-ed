@@ -24,6 +24,7 @@ class HomeGallery extends React.Component {
                     </div>
                 )    
             }
+            return null;
         })
 
         let group2 = galleryImages.map(item => {
@@ -42,6 +43,7 @@ class HomeGallery extends React.Component {
                     </div>
                 )    
             }
+            return null;
         })
 
         let group3 = galleryImages.map(item => {
@@ -60,6 +62,7 @@ class HomeGallery extends React.Component {
                     </div>
                 )    
             }
+            return null;
         })
         return (
             <StackGrid 
