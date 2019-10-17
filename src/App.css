@@ -1,8 +1,8 @@
 /* Google Fonts
 font-family: 'Staatliches', 'Futura', sans-serif; /* navbar, page headings
-font-family: 'Lato', sans-serif; /* large blocks of text
-font-family: 'Roboto Slab', serif; /* accent text
-font-family: 'Patrick Hand', sans-serif; /* footer
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Patrick Hand', sans-serif;
 */
 
 /* Universal styling */
@@ -259,37 +259,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 100%;
 }
 
-/* About Page */
-.bio-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.bio-text {
-  margin-left: 50px;
-  width: 60%;
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
-.bio-image {
-  width: 30%;
-}
-
-.bio-image img {
-  width: 75%;
-}
-
-.bio-image p {
-  font-family: 'Lato', sans-serif;
-  font-size: .8em;
-}
-
 
 /* Gallery landing page */
 .gallery-landing-container {
@@ -454,6 +423,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   border-bottom: 5px solid #353535;
 }
 
+
 /* Styling for exhibition info li's */
 .year {
   font-size: .9em;
@@ -533,18 +503,132 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 
-/* Contact Form */
-.form-container {
+/* About Page */
+.bio-container {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
+.bio-text {
+  margin-left: 50px;
+  width: 60%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.bio-image {
+  width: 30%;
+}
+
+.bio-image img {
+  width: 75%;
+}
+
+.bio-image p {
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+}
+
+
+/* Contact Page */
 #contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  width: 50%;
+  border: 0;
 }
 
+label {
+  margin-top: 40px;
+  font-family: 'Lato', sans-serif; 
+  font-size: .85em;
+  font-weight: 600;
+}
+
+/* Name and Email fields */
+.field {
+  margin: 10px 0 5px 0;
+  padding: 10px;
+  /* Border Styling */
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 3px solid #000000;
+  width: 100%;
+  height: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  color: #000000;
+}
+
+/* Message field */
+textarea {
+  margin: 5px 0 5px 0;
+  padding: 10px;
+  /* Border Styling */
+  border-right: 0;
+  border-top: 0;
+  border-left: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  width: 100%;
+  height: 130px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #000000;
+}
+
+/* Error message span */
+h6 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 400;
+  font-size: .85em;
+  color: #353535;
+}
+
+/* Submit button */
+#submit {
+  margin: auto;
+  margin-top: 45px;
+  width: 45%;
+  height: 10%;
+   /* Border Styling */
+   border-right: 0;
+   border-top: 0;
+   border-left: 0;
+   border-bottom: 3px solid #000000;
+  background-color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  transition: all 0.4s linear;
+  outline: none;
+}
+
+#submit:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
 
 
 
@@ -805,16 +889,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
 
-  /* Contact Form */
-  .form-container {
-    width: 100%;
+  /* Contact Page */
+  #contact-form {
+    margin-left: 0px;
+    padding-left: 0px;
   }
 
-  #contact-form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+  fieldset {
+    width: 90%;
+  }
+
+  /* Submit button */
+  #submit {
+    width: 90%;
+    height: 9%;
   }
 
 }
