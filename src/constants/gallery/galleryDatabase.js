@@ -343,7 +343,7 @@ export const galleryImages = [
         title: 'Three Kings After Rouault',
         date: 1978,
         media: 'Stained Glass',
-        dimensions: '24" x 2"', // this doesn't seem right, maybe it should be 24" x 12"?
+        dimensions: '24" x 12"',
         src: [item18]
     },
     {
