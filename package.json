@@ -1,5 +1,6 @@
 {
-  "name": "client",
+  "name": "norman-ed",
+  "homepage": "http://normaned.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
