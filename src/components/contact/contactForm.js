@@ -116,7 +116,7 @@ export const ContactForm = () => {
                                 type="email"
                                 name="email"
                                 placeholder="you@example.com"
-                                onBlue={handleBlur}
+                                onBlur={handleBlur}
                             />
 
                             { /* Message Input */ }
@@ -130,7 +130,7 @@ export const ContactForm = () => {
                                 name="message"
                                 placeholder="Dear Norman..."
                                 component="textarea"
-                                onBlue={handleBlur}
+                                onBlur={handleBlur}
                             />
 
                             <button
