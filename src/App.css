@@ -1,8 +1,7 @@
 /* Google Fonts
-font-family: 'Staatliches', 'Futura', sans-serif; /* navbar, page headings
-font-family: 'Lato', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Patrick Hand', sans-serif;
+font-family: 'Staatliches', 'Arial Narrow', 'Arial', sans-serif; /* navbar, page headings
+font-family: 'Lato', 'Helvetica', sans-serif;
+font-family: 'Roboto Slab', 'Palatino', serif;
 */
 
 /* Universal styling */
@@ -10,14 +9,14 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: #000000;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Helvetica', sans-serif;
   font-size: 1em; 
 }
 
 h1 {
   margin-left: 50px;
   color: #000000;
-  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-family: 'Staatliches', 'Arial Narrow', 'Arial', sans-serif;
   font-size: 3em;
   font-weight: 400;
   text-transform: uppercase;
@@ -50,7 +49,7 @@ a {
 .bm-burger-button::after {
   margin-left: 60px;
   color: #353535;
-  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-family: 'Staatliches', 'Arial Narrow', 'Arial', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
   text-transform: uppercase;
@@ -146,7 +145,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .menu-link {
-  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-family: 'Staatliches', 'Arial Narrow', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 1.25em;
   letter-spacing: .1em;
@@ -188,9 +187,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .footer p {
-  font-size: .8em;
+  font-size: .85em;
   line-height: 0.2em;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
 }
 
 
@@ -211,7 +210,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 ._404-container p {
-  font-family: 'Roboto Slab', serif; 
+  font-family: 'Roboto Slab', 'Palatino', serif; 
   font-size: 1.8em;
 }
 
@@ -231,7 +230,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .random-image-component p {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1em;
   color: #353535;
   text-align: center;
@@ -245,9 +244,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-family: 'Staatliches', 'Arial Narrow', 'Arial', sans-serif;
+  text-transform: uppercase;
   font-size: 2.5em;
-  color: #353535;
+  color: #0f0f0f;
 }
 
 .home-gallery-image {
@@ -280,7 +280,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .category-container h2 {
-  font-family: 'Staatliches', 'Futura', sans-serif;
+  font-family: 'Staatliches', 'Arial Narrow', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 1.8em;
   letter-spacing: .1em;
@@ -368,7 +368,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .breadcrumb li {
   display: inline;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-style: italic;
   font-size: .9em;
   text-transform: lowercase;
@@ -384,7 +384,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .item-details-info p {
   margin-left: 50px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1.75em;
 }
 
@@ -439,20 +439,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .venue-and-location {
   padding-top: 20px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-weight: 600;
   font-size: 1.3em;
 }
 
 .description {
   padding-top: 15px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1.2em;
 }
 
 .date {
   padding-top: 10px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1em;
   color: #353535;
 }
@@ -475,14 +475,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .press-date {
   padding: 40px 0 10px 0;
   color: #353535;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1.1em;
   letter-spacing: .05em;
 }
 
 .press-title {
   padding-bottom: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Helvetica', sans-serif;
   font-size: 1.4em;
   font-weight: 600;
   letter-spacing: .05em;
@@ -491,7 +491,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .press-excerpt {
   border-left: 2px solid #d1d1d1;
   padding-left: 10px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1.1em;
   font-style: italic;
   letter-spacing: .05em;
@@ -516,7 +516,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bio-text {
   margin-left: 50px;
   width: 60%;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1.1em;
   line-height: 1.7em;
 }
@@ -530,7 +530,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .bio-image p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Helvetica', sans-serif;
   font-size: .8em;
 }
 
@@ -553,7 +553,7 @@ fieldset {
 
 label {
   margin-top: 40px;
-  font-family: 'Lato', sans-serif; 
+  font-family: 'Lato', 'Helvetica', sans-serif; 
   font-size: .85em;
   font-weight: 600;
 }
@@ -580,7 +580,7 @@ error-text {
   border-bottom: 3px solid #000000;
   width: 100%;
   height: 20px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1em;
   color: #000000;
 }
@@ -596,7 +596,7 @@ textarea {
   border-bottom: 3px solid #000000;
   width: 100%;
   height: 130px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Palatino', serif;
   font-size: 1em;
   line-height: 1.7em;
   color: #000000;
@@ -614,7 +614,7 @@ textarea {
    border-left: 0;
    border-bottom: 3px solid #000000;
   background-color: #000000;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Helvetica', sans-serif;
   font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
@@ -656,7 +656,7 @@ textarea {
   }
 
   .footer p {
-    font-size: .75em;
+    font-size: .85em;
   }
 
 
@@ -678,7 +678,7 @@ textarea {
   }
 
   ._404-container p {
-    font-family: 'Roboto Slab', serif; 
+    font-family: 'Roboto Slab', 'Palatino', serif; 
     font-size: 1.8em;
     text-align: center;
   }
@@ -809,7 +809,7 @@ textarea {
 
   .breadcrumb li {
     display: inline;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', 'Palatino', serif;
     font-style: italic;
     font-size: .9em;
     text-transform: lowercase;
@@ -890,17 +890,13 @@ textarea {
 
 
   /* Contact Page */
-  #contact-form {
-    margin-left: 0px;
-    padding-left: 0px;
-  }
-
   fieldset {
-    width: 90%;
+    width: 80%;
   }
 
   /* Submit button */
   #submit {
+    margin-bottom: 50px;
     width: 90%;
     height: 9%;
   }
