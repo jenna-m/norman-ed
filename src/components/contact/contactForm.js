@@ -7,6 +7,7 @@ import {
     ErrorMessage
 } from 'formik';
 import * as yup from 'yup';
+import { randomName } from './randomName';
 
 // EmailJS template params
 let template_params = {
@@ -20,16 +21,6 @@ let template_params = {
 const service_id = 'default_service';
 const template_id = 'normanedcontactform';
 const emailJSUserID = 'user_cVacpT4HoGWc7Omos0X8P'
-
-
-// Random name placeholder -- ADD MORE NAMES!
-const nameArray = [
-    'The Dude'
-];
-
-let randomNameIndex = Math.floor(Math.random() * nameArray.length);
-
-const randomName = nameArray[randomNameIndex];
 
 
 // Yup schema
@@ -103,7 +94,7 @@ export const ContactForm = () => {
                     <Form id="contact-form" role="form">
                         <fieldset>
                             { /* Name Input */ }
-                            <label for name="name">Name</label>
+                            <label for name="name">Your Name</label>
                             <Field
                                 className="field"
                                 type="name"
@@ -117,7 +108,7 @@ export const ContactForm = () => {
                             />
 
                             { /* Email Input */ }
-                            <label for name="email">Email</label>
+                            <label for name="email">Your Email</label>
                             <Field
                                 className="field"
                                 type="email"
