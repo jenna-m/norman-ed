@@ -1,22 +1,15 @@
 import React from 'react';
 import ContactForm from './contactForm';
-import PropTypes from 'prop-types';
+import { env } from '../../config';
 
 class Contact extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>Contact</h1>
-                <div className="form-container">
-                    <ContactForm env={this.props.env} />
-                </div>
+                <ContactForm env={env} />
             </div>
         );
     }
 }
-
-Contact.propTypes = {
-    env: PropTypes.object.isRequired
-};
 
 export default Contact;
