@@ -133,13 +133,15 @@ export const ContactForm = () => {
                                 onBlur={handleBlur}
                             />
 
-                            <button
-                                id="submit"
-                                name="submit"
-                                type="submit"
-                            >
-                                { legend }
-                            </button>
+                            <div className="submit-button">
+                                <button
+                                    id="submit"
+                                    name="submit"
+                                    type="submit"
+                                >
+                                    { legend }
+                                </button>
+                            </div>
                         </fieldset>
                     </Form>
                 )}
