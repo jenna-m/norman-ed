@@ -31,7 +31,9 @@ import item11 from './small-painting/small-painting.jpg';
 import item12 from './small-watercolor/small-watercolor.jpg';
 import item13a from './arc/arc-1.jpg';
 import item13b from './arc/arc-2.jpg';
-import item14 from './ghost-ship/ghost-ship.jpg';
+import item14a from './ghost-ship/ghost-ship-1.jpg';
+import item14b from './ghost-ship/ghost-ship-2.jpg';
+import item14c from './ghost-ship/ghost-ship-3.jpg';
 import item15 from './metals-project/metals-project.jpg';
 import item16a from './orbit/orbit-1.jpg';
 import item16b from './orbit/orbit-2.jpg';
@@ -83,13 +85,15 @@ import item40d from './standing-vessel/standing-vessel-4.jpg';
 import item40e from './standing-vessel/standing-vessel-5.jpg';
 import item41a from './untitled-tool-box/untitled-tool-box-1.jpg';
 import item41b from './untitled-tool-box/untitled-tool-box-2.jpg';
-import item42 from './hidden-vessel/hidden-vessel.jpg';
+import item42a from './hidden-vessel/hidden-vessel-1.jpg';
+import item42b from './hidden-vessel/hidden-vessel-2.jpg';
 import item43a from './hull/hull-1.jpg';
 import item43b from './hull/hull-2.jpg';
 import item44a from './reclining-vessel/reclining-vessel-1.jpg';
 import item44b from './reclining-vessel/reclining-vessel-2.jpg';
 import item44c from './reclining-vessel/reclining-vessel-3.jpg';
-import item45 from './standing-figure/standing-figure.jpg';
+import item45a from './ghost-plumb/ghost-plumb-1.jpg';
+import item45b from './ghost-plumb/ghost-plumb-2.jpg';
 import item46a from './tool-with-holder/tool-with-holder-1.jpg';
 import item46b from './tool-with-holder/tool-with-holder-2.jpg';
 import item47 from './untitled-1996/untitled-1996.jpg';
@@ -180,6 +184,35 @@ import item72d from './siblings/siblings-4.jpg';
 import item72e from './siblings/siblings-5.jpg';
 import item73a from './untitled-adjustable-sculpture/untitled-adjustable-sculpture-1.jpg';
 import item73b from './untitled-adjustable-sculpture/untitled-adjustable-sculpture-2.jpg';
+import item74a from './balance/balance-1.jpg';
+import item74b from './balance/balance-2.jpg';
+import item74c from './balance/balance-3.jpg';
+import item74d from './balance/balance-4.jpg';
+import item75a from './casting/casting-1.jpg';
+import item75b from './casting/casting-2.jpg';
+import item76a from './chair-with-wheel/chair-with-wheel-1.jpg';
+import item76b from './chair-with-wheel/chair-with-wheel-2.jpg';
+import item77a from './coffee-press/coffee-press-1.jpg';
+import item77b from './coffee-press/coffee-press-2.jpg';
+import item77c from './coffee-press/coffee-press-3.jpg';
+import item78a from './conversation/conversation-1.jpg';
+import item78b from './conversation/conversation-2.jpg';
+import item79a from './damocles-plumb/damocles-plumb-1.jpg';
+import item79b from './damocles-plumb/damocles-plumb-2.jpg';
+import item80a from './domestic-dispute/domestic-dispute-1.jpg';
+import item80b from './domestic-dispute/domestic-dispute-2.jpg';
+import item80c from './domestic-dispute/domestic-dispute-3.jpg';
+import item80d from './domestic-dispute/domestic-dispute-4.jpg';
+import item81 from './father-son-and-holy-ghost/father-son-and-holy-ghost.jpg';
+import item82a from './feet-of-clay/feet-of-clay-1.jpg';
+import item82b from './feet-of-clay/feet-of-clay-2.jpg';
+import item83a from './heavy-plumb/heavy-plumb-1.jpg';
+import item83b from './heavy-plumb/heavy-plumb-2.jpg';
+import item83c from './heavy-plumb/heavy-plumb-3.jpg';
+import item83d from './heavy-plumb/heavy-plumb-4.jpg';
+import item84a from './hosanna-plumb/hosanna-plumb-1.jpg';
+import item84b from './hosanna-plumb/hosanna-plumb-2.jpg';
+import item84c from './hosanna-plumb/hosanna-plumb-3.jpg';
 
 // All Gallery image data
 export const galleryImages = [
@@ -307,7 +340,7 @@ export const galleryImages = [
 		date: 1981,
 		media: 'Glass',
 		dimensions: '48" x 96"',
-		src: [item14]
+		src: [item14a, item14b, item14c]
 	},
 	{
 		id: 15,
@@ -559,7 +592,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Steel, Handmade Bricks',
 		dimensions: '40" x 11" x 11"',
-		src: [item42]
+		src: [item42a, item42b]
 	},
 	{
 		id: 43,
@@ -582,11 +615,11 @@ export const galleryImages = [
 	{
 		id: 45,
 		category: 'post-collegiate',
-		title: 'Standing Figure',
+		title: 'Ghost Plumb',
 		date: 1996,
 		media: 'Carved Firebrick',
 		dimensions: '72" x 18" x 36"',
-		src: [item45]
+		src: [item45a, item45b]
 	},
 	{
 		id: 46,
@@ -848,8 +881,107 @@ export const galleryImages = [
 		media: 'Wood, Steel',
 		dimensions: '4 1/2" x 10" x 120" - 228"',
 		src: [item73a, item73b]
+	},
+	{
+		id: 74,
+		category: 'post-collegiate',
+		title: 'Balance',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item74a, item74b, item74c, item74d]
+	},
+	{
+		id: 75,
+		category: 'post-collegiate',
+		title: 'Casting',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item75a, item75b]
+	},
+	{
+		id: 76,
+		category: 'post-collegiate',
+		title: 'Chair With Wheel',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item76a, item76b]
+	},
+	{
+		id: 77,
+		category: 'post-collegiate',
+		title: 'Coffee Press',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item77a, item77b, item77c]
+	},
+	{
+		id: 78,
+		category: 'post-collegiate',
+		title: 'Conversation',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item78a, item78b]
+	},
+	{
+		id: 79,
+		category: 'post-collegiate',
+		title: 'Damocles Plumb',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item79a, item79b]
+	},
+	{
+		id: 80,
+		category: 'post-collegiate',
+		title: 'Domestic Dispute',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item80a, item80b, item80c, item80d]
+	},
+	{
+		id: 81,
+		category: 'post-collegiate',
+		title: 'Father, Son, & Holy Ghost',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: item81
+	},
+	{
+		id: 82,
+		category: 'post-collegiate',
+		title: 'Feet of Clay',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item82a, item82b]
+	},
+	{
+		id: 83,
+		category: 'post-collegiate',
+		title: 'Heavy Plumb',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item83a, item83b, item83c, item83d]
+	},
+	{
+		id: 84,
+		category: 'post-collegiate',
+		title: 'Hosanna Plumb',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item84a, item84b, item84c]
 	}
 ];
 
 // const for total number of items in the gallery
-export const galleryCount = 73;
+export const galleryCount = 84;
