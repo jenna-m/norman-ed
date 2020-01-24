@@ -4,9 +4,9 @@ class Footer extends React.PureComponent {
 	render() {
 		return (
 			<div className="footer">
-				<p>Artwork © Norman Ed 1975-2019</p>
+				<p>Artwork © Norman Ed 1975-2020</p>
 				<p>
-					Website development by{' '}
+					Design & Development by{' '}
 					<a
 						href="https://jennamichaels.dev"
 						target="_blank"
