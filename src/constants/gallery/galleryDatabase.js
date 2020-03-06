@@ -213,6 +213,10 @@ import item83d from './heavy-plumb/heavy-plumb-4.jpg';
 import item84a from './hosanna-plumb/hosanna-plumb-1.jpg';
 import item84b from './hosanna-plumb/hosanna-plumb-2.jpg';
 import item84c from './hosanna-plumb/hosanna-plumb-3.jpg';
+import item85a from './event/event-1.jpg';
+import item85b from './event/event-2.jpg';
+import item85c from './event/event-3.jpg';
+import item85d from './event/event-4.jpg';
 
 // All Gallery image data
 export const galleryImages = [
@@ -980,8 +984,17 @@ export const galleryImages = [
 		media: 'Unknown',
 		dimensions: 'Unknown',
 		src: [item84a, item84b, item84c]
+	},
+	{
+		id: 85,
+		category: '2000-2019',
+		title: 'Event',
+		date: 2020, // placeholder date until I get accurate one
+		media: 'Unknown',
+		dimensions: 'Unknown',
+		src: [item85a, item85b, item85c, item85d]
 	}
 ];
 
 // const for total number of items in the gallery
-export const galleryCount = 84;
+export const galleryCount = 85;
