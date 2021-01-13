@@ -1,3 +1,4 @@
+// When creating a new gallery, remember to add to routes.js as well
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { galleryImages } from '../../constants/gallery/galleryDatabase';
@@ -10,8 +11,10 @@ class Gallery extends React.Component {
 		const gallery2RandomNum = Math.floor(Math.random() * 8) + 13;
 		// (1980-1999) const for a random number 21-73 + 21 (total num of ID's passed)
 		const gallery3RandomNum = Math.floor(Math.random() * 53) + 21;
-		// (2000-2019) const for a random number 74-84 74 (total num of ID's passed)
+		// (2000-2019) const for a random number 74-84 + 74 (total num of ID's passed)
 		const gallery4RandomNum = Math.floor(Math.random() * 10) + 74;
+		// (2020-Present) const for a random number 89-92 + 89 (total num of ID's passed)
+		const gallery5RandomNum = Math.floor(Math.random() * 3) + 89;
 
 		/* var const name needs to be changed; also create the same for another
 		gallery AND don't forget to change the random numbers to reflect the
@@ -76,6 +79,21 @@ class Gallery extends React.Component {
 			return null;
 		});
 
+		const gallery5Item = galleryImages.map(item => {
+			if (item.id === gallery5RandomNum) {
+				return (
+					<div className="gallery-home-item-card" key={item.id}>
+						<div className="item-image">
+							<Link to={{ pathname: `/${item.category}` }}>
+								<img src={item.src[0]} alt={item.title} />
+							</Link>
+						</div>
+					</div>
+				);
+			}
+			return null;
+		});
+
 		return (
 			<div className="container">
 				<h1>Gallery</h1>
@@ -96,6 +114,10 @@ class Gallery extends React.Component {
 					<div className="category-container">
 						<h2>2000-2019</h2>
 						{gallery4Item}
+					</div>
+					<div className="category-container">
+						<h2>2020-Present</h2>
+						{gallery5Item}
 					</div>
 				</div>
 			</div>
