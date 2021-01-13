@@ -10,7 +10,7 @@ Some things to keep in mind when using and editing this document:
         Dimensions: {item.dimensions}
         etc.
     - The 'category' key corresponds with the era of the artwork ('1970-1977',
-    '1978-1981', 'post-collegiate').
+    '1978-1981', '1980-1999', '2000-2019', '2020-Present').
     This will be used to sort the gallery by era and for breadcrumb navigation.
     To sort by date, use an if statement and use item.date.
 */
@@ -39,7 +39,8 @@ import item16a from './orbit/orbit-1.jpg';
 import item16b from './orbit/orbit-2.jpg';
 import item17a from './three-king-vessel/three-king-vessel-1.jpg';
 import item17b from './three-king-vessel/three-king-vessel-2.jpg';
-import item18 from './three-kings-after-roualt/three-kings-after-roualt.jpg';
+import item18 from './three-kings-after-roualt/three-kings-after-roualt-1.jpg';
+import item18a from './three-kings-after-roualt/three-kings-after-roualt-2.jpg';
 import item19a from './wall/wall-1.jpg';
 import item19b from './wall/wall-2.jpg';
 import item20a from './wall-ship/wall-ship-1.jpg';
@@ -217,6 +218,27 @@ import item85a from './event/event-1.jpg';
 import item85b from './event/event-2.jpg';
 import item85c from './event/event-3.jpg';
 import item85d from './event/event-4.jpg';
+import item86a from './treasure-book/treasure-book-1.jpg';
+import item86b from './treasure-book/treasure-book-2.jpg';
+import item87 from './cruciform/cruciform.jpg';
+import item88a from './heavy-plumb-2/heavy-plumb-2-1.jpg';
+import item88b from './heavy-plumb-2/heavy-plumb-2-2.jpg';
+import item88c from './heavy-plumb-2/heavy-plumb-2-3.jpg';
+import item88d from './heavy-plumb-2/heavy-plumb-2-4.jpg';
+import item88e from './heavy-plumb-2/heavy-plumb-2-5.jpg';
+import item89a from './truth-&-hope/truth-&-hope-1.jpg';
+import item89b from './truth-&-hope/truth-&-hope-2.jpg';
+import item89c from './truth-&-hope/truth-&-hope-3.jpg';
+import item89d from './truth-&-hope/truth-&-hope-4.jpg';
+import item89e from './truth-&-hope/truth-&-hope-5.jpg';
+import item90a from './still-riding/still-riding-1.jpg';
+import item90b from './still-riding/still-riding-2.jpg';
+import item90c from './still-riding/still-riding-3.jpg';
+import item91a from './dis-cord/dis-cord-1.jpg';
+import item91b from './dis-cord/dis-cord-2.jpg';
+import item92a from './814/814-1.jpg';
+import item92b from './814/814-2.jpg';
+
 
 // All Gallery image data
 export const galleryImages = [
@@ -227,7 +249,7 @@ export const galleryImages = [
 		date: 1975,
 		media: 'Ink', // missing media; I guessed
 		dimensions: '24" x 18"',
-		src: [item1]
+		src: [item1],
 	},
 	{
 		id: 2,
@@ -236,7 +258,7 @@ export const galleryImages = [
 		date: 1975,
 		media: 'Collagraphy Print',
 		dimensions: '17" x 12"',
-		src: [item2]
+		src: [item2],
 	},
 	{
 		id: 3,
@@ -245,7 +267,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Collagraphy Print',
 		dimensions: '17" x 12"',
-		src: [item3]
+		src: [item3],
 	},
 	{
 		id: 4,
@@ -254,7 +276,7 @@ export const galleryImages = [
 		date: 1975,
 		media: 'Ceramic',
 		dimensions: '9" x 8" x 6"',
-		src: [item4]
+		src: [item4],
 	},
 	{
 		id: 5,
@@ -263,7 +285,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Lithograph', // missing media; I guessed
 		dimensions: '10" x 8"',
-		src: [item5]
+		src: [item5],
 	},
 	{
 		id: 6,
@@ -272,7 +294,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Graphite',
 		dimensions: '20" x 16"',
-		src: [item6]
+		src: [item6],
 	},
 	{
 		id: 7,
@@ -281,7 +303,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Black & White Photography',
 		dimensions: 'Unknown Dimensions', // missing dimensions
-		src: [item7]
+		src: [item7],
 	},
 	{
 		id: 8,
@@ -290,7 +312,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Silkscreen',
 		dimensions: '23" x 14"',
-		src: [item8]
+		src: [item8],
 	},
 	{
 		id: 9,
@@ -299,7 +321,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Etching',
 		dimensions: '12" x 6"',
-		src: [item9]
+		src: [item9],
 	},
 	{
 		id: 10,
@@ -308,7 +330,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Ceramic, Wood',
 		dimensions: '24" x 24" x 12"',
-		src: [item10a, item10b]
+		src: [item10a, item10b],
 	},
 	{
 		id: 11,
@@ -317,7 +339,7 @@ export const galleryImages = [
 		date: 1975,
 		media: 'Acrylic, Gold Leaf',
 		dimensions: '8" x 8"',
-		src: [item11]
+		src: [item11],
 	},
 	{
 		id: 12,
@@ -326,7 +348,7 @@ export const galleryImages = [
 		date: 1976,
 		media: 'Watercolor',
 		dimensions: '6" x 12"',
-		src: [item12]
+		src: [item12],
 	},
 	{
 		id: 13,
@@ -335,7 +357,7 @@ export const galleryImages = [
 		date: 1981,
 		media: 'Blown Glass',
 		dimensions: '8" x 12" x 3"',
-		src: [item13a, item13b]
+		src: [item13a, item13b],
 	},
 	{
 		id: 14,
@@ -344,7 +366,7 @@ export const galleryImages = [
 		date: 1981,
 		media: 'Glass',
 		dimensions: '48" x 96"',
-		src: [item14a, item14b, item14c]
+		src: [item14a, item14b, item14c],
 	},
 	{
 		id: 15,
@@ -353,7 +375,7 @@ export const galleryImages = [
 		date: 1977,
 		media: 'Sterling Silver, Brass',
 		dimensions: 'Unknown Dimensions',
-		src: [item15]
+		src: [item15],
 	},
 	{
 		id: 16,
@@ -362,7 +384,7 @@ export const galleryImages = [
 		date: 1981,
 		media: 'Glass, Steel',
 		dimensions: '60" x 36" x 144"',
-		src: [item16a, item16b]
+		src: [item16a, item16b],
 	},
 	{
 		id: 17,
@@ -371,16 +393,16 @@ export const galleryImages = [
 		date: 1980,
 		media: 'Blown Glass',
 		dimensions: '8" x 6"',
-		src: [item17a, item17b]
+		src: [item17a, item17b],
 	},
 	{
 		id: 18,
-		category: '1978-1981',
+		category: '1970-1977',
 		title: 'Three Kings After Rouault',
 		date: 1978,
 		media: 'Stained Glass',
 		dimensions: '24" x 12"',
-		src: [item18]
+		src: [item18, item18a],
 	},
 	{
 		id: 19,
@@ -389,7 +411,7 @@ export const galleryImages = [
 		date: 1981,
 		media: 'Blown Glass',
 		dimensions: '6" x 6" x 10"',
-		src: [item19a, item19b]
+		src: [item19a, item19b],
 	},
 	{
 		id: 20,
@@ -398,7 +420,7 @@ export const galleryImages = [
 		date: 1981,
 		media: 'Glass, Steel',
 		dimensions: '12" x 8" x 10"',
-		src: [item20a, item20b]
+		src: [item20a, item20b],
 	},
 	{
 		id: 21,
@@ -407,7 +429,7 @@ export const galleryImages = [
 		date: 1986,
 		media: 'Steel, Found Parts',
 		dimensions: '20" x 12" x 8"',
-		src: [item21]
+		src: [item21],
 	},
 	{
 		id: 22,
@@ -416,7 +438,7 @@ export const galleryImages = [
 		date: 1983,
 		media: 'Glass, Brass',
 		dimensions: '8" x 12" x 3"',
-		src: [item22]
+		src: [item22],
 	},
 	{
 		id: 23,
@@ -425,7 +447,7 @@ export const galleryImages = [
 		date: 1982,
 		media: 'Blown Glass, Lamp Parts',
 		dimensions: '17" x 7"',
-		src: [item23]
+		src: [item23],
 	},
 	{
 		id: 24,
@@ -434,7 +456,7 @@ export const galleryImages = [
 		date: 1983,
 		media: 'Glass, Lamp Parts',
 		dimensions: '16" x 7" x 6"',
-		src: [item24]
+		src: [item24],
 	},
 	{
 		id: 25,
@@ -443,7 +465,7 @@ export const galleryImages = [
 		date: 1983,
 		media: 'Glass, Steel, Brass',
 		dimensions: '24" x 24" x 36"',
-		src: [item25]
+		src: [item25],
 	},
 	{
 		id: 26,
@@ -452,7 +474,7 @@ export const galleryImages = [
 		date: 1990,
 		media: 'Copper, Found Parts',
 		dimensions: '12" x 8"',
-		src: [item26]
+		src: [item26],
 	},
 	{
 		id: 27,
@@ -461,7 +483,7 @@ export const galleryImages = [
 		date: 1993,
 		media: 'Steel, Stone, Ceramic',
 		dimensions: '72" x 36" x 48"',
-		src: [item27a, item27b]
+		src: [item27a, item27b],
 	},
 	{
 		id: 28,
@@ -470,7 +492,7 @@ export const galleryImages = [
 		date: 1993,
 		media: 'Wood, Steel, Ceramic, Rubber',
 		dimensions: '48" x 84" x 24"',
-		src: [item28a, item28b, item28c, item28d]
+		src: [item28a, item28b, item28c, item28d],
 	},
 	{
 		id: 29,
@@ -479,7 +501,7 @@ export const galleryImages = [
 		date: 1993,
 		media: 'Steel, Wood',
 		dimensions: '110" x 36" x 24"',
-		src: [item29a, item29b]
+		src: [item29a, item29b],
 	},
 	{
 		id: 30,
@@ -488,7 +510,7 @@ export const galleryImages = [
 		date: 1986,
 		media: 'Steel, Glass, Lamp Parts',
 		dimensions: '15" x 18" x 12"',
-		src: [item30]
+		src: [item30],
 	},
 	{
 		id: 31,
@@ -497,7 +519,7 @@ export const galleryImages = [
 		date: 1987,
 		media: 'Glass, Steel',
 		dimensions: '20" x 14"',
-		src: [item31a, item31b]
+		src: [item31a, item31b],
 	},
 	{
 		id: 32,
@@ -506,7 +528,7 @@ export const galleryImages = [
 		date: 1986,
 		media: 'Found Parts',
 		dimensions: '13" x 6"',
-		src: [item32]
+		src: [item32],
 	},
 	{
 		id: 33,
@@ -515,7 +537,7 @@ export const galleryImages = [
 		date: 1989,
 		media: 'Glass, Steel, Rubber',
 		dimensions: '24" x 10" x 12"',
-		src: [item33]
+		src: [item33],
 	},
 	{
 		id: 34,
@@ -524,7 +546,7 @@ export const galleryImages = [
 		date: 1994,
 		media: 'Steel, Porcelain',
 		dimensions: '6" x 4" (each)',
-		src: [item34a, item34b]
+		src: [item34a, item34b],
 	},
 	{
 		id: 35,
@@ -533,7 +555,7 @@ export const galleryImages = [
 		date: 1994,
 		media: 'Steel, Wood',
 		dimensions: '80" x 24" x 18"',
-		src: [item35a, item35b]
+		src: [item35a, item35b],
 	},
 	{
 		id: 36,
@@ -542,7 +564,7 @@ export const galleryImages = [
 		date: 1994,
 		media: 'Wood, Graphite',
 		dimensions: '144" x 36" x 48"',
-		src: [item36a, item36b, item36c, item36d]
+		src: [item36a, item36b, item36c, item36d],
 	},
 	{
 		id: 37,
@@ -551,7 +573,7 @@ export const galleryImages = [
 		date: 1994,
 		media: 'High Fire Stonewear',
 		dimensions: '28" x 12"',
-		src: [item37a, item37b]
+		src: [item37a, item37b],
 	},
 	{
 		id: 38,
@@ -560,7 +582,7 @@ export const galleryImages = [
 		date: 1994,
 		media: 'Slip Cast Ceramic, Fiber',
 		dimensions: '36" x 120"',
-		src: [item38a, item38b, item38c]
+		src: [item38a, item38b, item38c],
 	},
 	{
 		id: 39,
@@ -569,7 +591,7 @@ export const galleryImages = [
 		date: 1995,
 		media: 'Steel, Black Porcelain',
 		dimensions: '22" x 6" x 8"',
-		src: [item39a, item39b]
+		src: [item39a, item39b],
 	},
 	{
 		id: 40,
@@ -578,7 +600,7 @@ export const galleryImages = [
 		date: 1995,
 		media: 'Wood, Steel, Rope',
 		dimensions: '60" x 48" x 60"',
-		src: [item40a, item40b, item40c, item40d, item40e]
+		src: [item40a, item40b, item40c, item40d, item40e],
 	},
 	{
 		id: 41,
@@ -587,7 +609,7 @@ export const galleryImages = [
 		date: 1995,
 		media: 'Wood, Metal',
 		dimensions: '16" x 10" x 6"',
-		src: [item41a, item41b]
+		src: [item41a, item41b],
 	},
 	{
 		id: 42,
@@ -596,7 +618,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Steel, Handmade Bricks',
 		dimensions: '40" x 11" x 11"',
-		src: [item42a, item42b]
+		src: [item42a, item42b],
 	},
 	{
 		id: 43,
@@ -605,7 +627,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Wood, Glass, Canvas',
 		dimensions: '60" x 72" x 132"',
-		src: [item43a, item43b]
+		src: [item43a, item43b],
 	},
 	{
 		id: 44,
@@ -614,7 +636,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Wood, Roofing Material',
 		dimensions: '84" x 48" x 48"',
-		src: [item44a, item44b, item44c]
+		src: [item44a, item44b, item44c],
 	},
 	{
 		id: 45,
@@ -623,7 +645,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Carved Firebrick',
 		dimensions: '72" x 18" x 36"',
-		src: [item45a, item45b]
+		src: [item45a, item45b],
 	},
 	{
 		id: 46,
@@ -632,7 +654,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Mixed Media',
 		dimensions: '4" x 3" x 23"',
-		src: [item46a, item46b]
+		src: [item46a, item46b],
 	},
 	{
 		id: 47,
@@ -641,7 +663,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Wood, Steel',
 		dimensions: '72" x 36" x 14"',
-		src: [item47]
+		src: [item47],
 	},
 	{
 		id: 48,
@@ -650,7 +672,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Steel, Brass',
 		dimensions: '18" x 17" x 43"',
-		src: [item48a, item48b, item48c]
+		src: [item48a, item48b, item48c],
 	},
 	{
 		id: 49,
@@ -659,7 +681,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Glass, Wood, Metal',
 		dimensions: '36" x 48" x 84"',
-		src: [item49a, item49b, item49c]
+		src: [item49a, item49b, item49c],
 	},
 	{
 		id: 50,
@@ -668,7 +690,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Mixed Media',
 		dimensions: '144" x 36" x 60"',
-		src: [item50a, item50b, item50c, item50d, item50e]
+		src: [item50a, item50b, item50c, item50d, item50e],
 	},
 	{
 		id: 51,
@@ -685,8 +707,8 @@ export const galleryImages = [
 			item51e,
 			item51f,
 			item51g,
-			item51h
-		]
+			item51h,
+		],
 	},
 	{
 		id: 52,
@@ -695,7 +717,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Concrete, Metal, Water',
 		dimensions: '48" x 13" x 20"',
-		src: [item52a, item52b, item52c]
+		src: [item52a, item52b, item52c],
 	},
 	{
 		id: 53,
@@ -704,7 +726,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Steel, Wood',
 		dimensions: '72" x 150"',
-		src: [item53a, item53b]
+		src: [item53a, item53b],
 	},
 	{
 		id: 54,
@@ -713,7 +735,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Wood',
 		dimensions: '80" x 30" x 56"',
-		src: [item54]
+		src: [item54],
 	},
 	{
 		id: 55,
@@ -722,7 +744,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Pit Fired Ceramic, Cloth',
 		dimensions: '22" x 10"',
-		src: [item55]
+		src: [item55],
 	},
 	{
 		id: 56,
@@ -731,7 +753,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Wood, Steel',
 		dimensions: '96" x 60" x 36"',
-		src: [item56a, item56b, item56c]
+		src: [item56a, item56b, item56c],
 	},
 	{
 		id: 57,
@@ -740,7 +762,7 @@ export const galleryImages = [
 		date: 1996,
 		media: 'Photo Collage',
 		dimensions: 'Unknown Dimensions', // No dimensions listed
-		src: [item57]
+		src: [item57],
 	},
 	{
 		id: 58,
@@ -749,7 +771,7 @@ export const galleryImages = [
 		date: 1998,
 		media: 'Mixed Media',
 		dimensions: '72" x 60" x 60"',
-		src: [item58a, item58b, item58c, item58d]
+		src: [item58a, item58b, item58c, item58d],
 	},
 	{
 		id: 59,
@@ -758,7 +780,7 @@ export const galleryImages = [
 		date: 1998,
 		media: 'Steel, Wood, Ceramic, Gold Leaf, Way', // unsure about 'way'
 		dimensions: '21" x 6" x 12"',
-		src: [item59a, item59b, item59c]
+		src: [item59a, item59b, item59c],
 	},
 	{
 		id: 60,
@@ -767,7 +789,7 @@ export const galleryImages = [
 		date: 1998,
 		media: 'Mixed Media',
 		dimensions: '84" x 28" x 140"',
-		src: [item60a, item60b, item60c, item60d]
+		src: [item60a, item60b, item60c, item60d],
 	},
 	{
 		id: 61,
@@ -776,7 +798,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Wood, Felt Paper',
 		dimensions: '72" x 120" x 12"',
-		src: [item61a, item61b, item61c]
+		src: [item61a, item61b, item61c],
 	},
 	{
 		id: 62,
@@ -785,7 +807,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Wood, Steel',
 		dimensions: '27" x 18" x 96" - 145"',
-		src: [item62a, item62b, item62c]
+		src: [item62a, item62b, item62c],
 	},
 	{
 		id: 63,
@@ -794,7 +816,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Steel, Glass',
 		dimensions: '22" x 10" x 40"',
-		src: [item63a, item63b]
+		src: [item63a, item63b],
 	},
 	{
 		id: 64,
@@ -803,7 +825,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Wood, Steel',
 		dimensions: '8" x 72" x 72"',
-		src: [item64a, item64b, item64c]
+		src: [item64a, item64b, item64c],
 	},
 	{
 		id: 65,
@@ -812,7 +834,7 @@ export const galleryImages = [
 		date: 1997,
 		media: 'Found Objects',
 		dimensions: '84" x 18" x 18"',
-		src: [item65a, item65b, item65c]
+		src: [item65a, item65b, item65c],
 	},
 	{
 		id: 66,
@@ -821,7 +843,7 @@ export const galleryImages = [
 		date: 1999,
 		media: 'Mixed Media',
 		dimensions: '96" x 40" x 144"',
-		src: [item66a, item66b, item66c, item66d]
+		src: [item66a, item66b, item66c, item66d],
 	},
 	{
 		id: 67,
@@ -830,7 +852,7 @@ export const galleryImages = [
 		date: 1999,
 		media: 'Wood, Aluminum',
 		dimensions: '240" x 72"',
-		src: [item67a, item67b, item67c, item67d, item67e]
+		src: [item67a, item67b, item67c, item67d, item67e],
 	},
 	{
 		id: 68,
@@ -839,7 +861,7 @@ export const galleryImages = [
 		date: 1999,
 		media: 'Wood, Steel, Rubber',
 		dimensions: '72" x 60" x 96"',
-		src: [item68a, item68b, item68c]
+		src: [item68a, item68b, item68c],
 	},
 	{
 		id: 69,
@@ -848,7 +870,7 @@ export const galleryImages = [
 		date: 1998,
 		media: 'Wood, Steel',
 		dimensions: '96" x 96" x 108"',
-		src: [item69a, item69b, item69c, item69d, item69e, item69f, item69g]
+		src: [item69a, item69b, item69c, item69d, item69e, item69f, item69g],
 	},
 	{
 		id: 70,
@@ -857,7 +879,7 @@ export const galleryImages = [
 		date: 1999,
 		media: 'Wood, Steel, Rubber',
 		dimensions: '36" x 30" x 30"',
-		src: [item70]
+		src: [item70],
 	},
 	{
 		id: 71,
@@ -866,7 +888,7 @@ export const galleryImages = [
 		date: 1999,
 		media: 'Wood, Aluminum, Steel, Rubber',
 		dimensions: '144" x 72" x 60"',
-		src: [item71a, item71b, item71c, item71d, item71e]
+		src: [item71a, item71b, item71c, item71d, item71e],
 	},
 	{
 		id: 72,
@@ -875,7 +897,7 @@ export const galleryImages = [
 		date: 1999,
 		media: 'Wood, Steel',
 		dimensions: '120" x 60" x 84"',
-		src: [item72a, item72b, item72c, item72d, item72e]
+		src: [item72a, item72b, item72c, item72d, item72e],
 	},
 	{
 		id: 73,
@@ -884,117 +906,180 @@ export const galleryImages = [
 		date: 1998,
 		media: 'Wood, Steel',
 		dimensions: '4 1/2" x 10" x 120" - 228"',
-		src: [item73a, item73b]
+		src: [item73a, item73b],
 	},
 	{
 		id: 74,
 		category: '2000-2019',
 		title: 'Balance',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item74a, item74b, item74c, item74d]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item74a, item74b, item74c, item74d],
 	},
 	{
 		id: 75,
 		category: '2000-2019',
 		title: 'Casting',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item75a, item75b]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item75a, item75b],
 	},
 	{
 		id: 76,
 		category: '2000-2019',
 		title: 'Chair With Wheel',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item76a, item76b]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item76a, item76b],
 	},
 	{
 		id: 77,
 		category: '2000-2019',
 		title: 'Coffee Press',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item77a, item77b, item77c]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item77a, item77b, item77c],
 	},
 	{
 		id: 78,
 		category: '2000-2019',
 		title: 'Conversation',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item78a, item78b]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item78a, item78b],
 	},
 	{
 		id: 79,
 		category: '2000-2019',
 		title: 'Damocles Plumb',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item79a, item79b]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item79a, item79b],
 	},
 	{
 		id: 80,
 		category: '2000-2019',
 		title: 'Domestic Dispute',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item80a, item80b, item80c, item80d]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item80a, item80b, item80c, item80d],
 	},
 	{
 		id: 81,
 		category: '2000-2019',
 		title: 'Father, Son, & Holy Ghost',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item81]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item81],
 	},
 	{
 		id: 82,
 		category: '2000-2019',
 		title: 'Feet of Clay',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item82a, item82b]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item82a, item82b],
 	},
 	{
 		id: 83,
 		category: '2000-2019',
 		title: 'Heavy Plumb',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item83a, item83b, item83c, item83d]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item83a, item83b, item83c, item83d],
 	},
 	{
 		id: 84,
 		category: '2000-2019',
 		title: 'Hosanna Plumb',
 		date: 2019, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item84a, item84b, item84c]
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item84a, item84b, item84c],
 	},
 	{
 		id: 85,
+		category: '1970-1977',
+		title: 'Treasure Book',
+		date: 1976, // placeholder date until I get accurate one
+		media: 'Mixed Media',
+		dimensions: 'Unknown Dimensions',
+		src: [item86a, item86b],
+	},
+	{
+		id: 86,
+		category: '1970-1977',
+		title: 'Cruciform',
+		date: 1976, // placeholder date until I get accurate one
+		media: 'Graphite',
+		dimensions: 'Unknown Dimensions',
+		src: [item87],
+	},
+	{
+		id: 87,
 		category: '2000-2019',
+		title: 'Heavy Plumb 2',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Mixed Media',
+		dimensions: 'Unknown Dimensions',
+		src: [item88a, item88b, item88c, item88d, item88e],
+	},
+	{
+		id: 88,
+		category: '2000-2019',
+		title: 'Truth & Hope',
+		date: 2019, // placeholder date until I get accurate one
+		media: 'Mixed Media',
+		dimensions: 'Unknown Dimensions',
+		src: [item89a, item89b, item89c, item89d, item89e],
+	},
+	{
+		id: 89,
+		category: '2020-Present',
 		title: 'Event',
-		date: 2020, // placeholder date until I get accurate one
-		media: 'Unknown',
-		dimensions: 'Unknown',
-		src: [item85a, item85b, item85c, item85d]
-	}
+		date: 2020,
+		media: 'Unknown Material',
+		dimensions: 'Unknown Dimensions',
+		src: [item85a, item85b, item85c, item85d], // Photos are out of order, fix in next update
+	},
+	{
+		id: 90,
+		category: '2020-Present',
+		title: 'Still Riding',
+		date: 2020,
+		media: 'Mixed Media',
+		dimensions: 'Unknown Dimensions',
+		src: [item90a, item90b, item90c],
+	},
+	{
+		id: 91,
+		category: '2020-Present',
+		title: 'Dis Cord',
+		date: 2020,
+		media: 'Mixed Media',
+		dimensions: 'Unknown Dimensions',
+		src: [item91a, item91b],
+	},
+	{
+		id: 92,
+		category: '2020-Present',
+		title: '814',
+		date: 2020,
+		media: 'Mixed Media',
+		dimensions: 'Unknown Dimensions',
+		src: [item92a, item92b],
+	},
 ];
 
 // const for total number of items in the gallery
-export const galleryCount = 85;
+export const galleryCount = 92;
