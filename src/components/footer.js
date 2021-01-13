@@ -4,7 +4,7 @@ class Footer extends React.PureComponent {
 	render() {
 		return (
 			<div className="footer">
-				<p>Artwork © Norman Ed 1975-2020</p>
+				<p>Artwork © Norman Ed 1975-2021</p>
 				<p>
 					Design & Development by{' '}
 					<a
