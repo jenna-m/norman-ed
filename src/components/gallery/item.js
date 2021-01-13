@@ -41,9 +41,11 @@ class Item extends React.Component {
         const prevItemID = item.id - 1;
         const nextItemID = item.id + 1;
 
+
         const showButtons = () => {
             if (item.id === 1) {
                 return (
+                    // Prev/Next buttons are currently hidden with CSS
                     <div className="prev-next-buttons">
                         {/* next item button */}
                         <Link to = {{ 
