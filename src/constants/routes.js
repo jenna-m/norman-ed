@@ -9,6 +9,7 @@ import Gallery1 from '../components/gallery/gallery1';
 import Gallery2 from '../components/gallery/gallery2';
 import Gallery3 from '../components/gallery/gallery3';
 import Gallery4 from '../components/gallery/gallery4';
+import Gallery5 from '../components/gallery/gallery5';
 import Item from '../components/gallery/item';
 import Exhibitions from '../components/exhibitions';
 import Press from '../components/press';
@@ -24,6 +25,7 @@ export const Routes = (
 			<Route path="/1978-1981" component={Gallery2} />
 			<Route path="/1980-1999" component={Gallery3} />
 			<Route path="/2000-2019" component={Gallery4} />
+			<Route path="/2020-Present" component={Gallery5} />
 			<Route path="/art" component={Item} />
 			<Route path="/exhibitions" component={Exhibitions} />
 			<Route path="/press" component={Press} />
